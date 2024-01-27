@@ -979,7 +979,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5317fb76924bb64fbe0d2b51c50f078, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SequenceToVerify: {fileID: 11400000, guid: 47de3a07f0a2e244fa4847c3a1072ff9, type: 2}
+  SequencesToVerify:
+  - {fileID: 11400000, guid: 47de3a07f0a2e244fa4847c3a1072ff9, type: 2}
   InteractionTimer: 2
   Detector: {fileID: 1296041857}
   Grabber: {fileID: 2107941336}

@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class SequenceVerifier : MonoBehaviour
 {
-    [SerializeField] private Sequence SequenceToVerify;
+    [SerializeField] private List<Sequence> SequencesToVerify;
     [SerializeField] private float InteractionTimer;
     
     [Header("Reference")]
@@ -45,15 +45,27 @@ public class SequenceVerifier : MonoBehaviour
             RecordedItemsInteraction.Clear();
         }
 
-        if (SequenceToVerify != null)
+        List<int> SequenceToRemove = new List<int>();
+            
+        for (int i = 0; i < SequencesToVerify.Count; i++)
         {
+            Sequence sequenceToVerify = SequencesToVerify[i];
             int validParts = 0;
-            foreach (var part in SequenceToVerify.Parts)
+            foreach (var part in sequenceToVerify.Parts)
             {
                 if (VerifySequencePart(part)) validParts++;
             }
-        
-            if(validParts == SequenceToVerify.Parts.Count) Debug.Log(SequenceToVerify.name + " Is Validated");
+
+            if (validParts == sequenceToVerify.Parts.Count)
+            {
+                Debug.Log(sequenceToVerify.name + " Is Validated");
+                SequenceToRemove.Add(i);
+            }
+        }
+
+        foreach (var i in SequenceToRemove)
+        {
+            SequencesToVerify.RemoveAt(i);
         }
     }
 
