@@ -2,17 +2,19 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class SequenceVerifier : MonoBehaviour
 {
-    [SerializeField] private List<Sequence> SequencesToVerify;
     [SerializeField] private float InteractionTimer;
+    public UnityEvent<Mood> OnSequenceValidated;
     
     [Header("Reference")]
     [SerializeField] private ItemDetector Detector;
     [SerializeField] private Grabber Grabber;
 
-    [SerializeField] private List<ItemType> RecordedItemsInteraction = new List<ItemType>();
+    private List<ItemType> RecordedItemsInteraction = new List<ItemType>();
+    private List<Sequence> SequencesToVerify = new List<Sequence>();
     private float timer;
 
     private void OnEnable()
@@ -23,6 +25,11 @@ public class SequenceVerifier : MonoBehaviour
     private void OnDisable()
     {
         Grabber.OnInteractWith.RemoveListener(OnInteractHandler);
+    }
+
+    public void SetSequences(List<Sequence> sequences)
+    {
+        SequencesToVerify = new List<Sequence>(sequences);
     }
 
     public void OnInteractHandler(Grabable grabable)
@@ -59,6 +66,7 @@ public class SequenceVerifier : MonoBehaviour
             if (validParts == sequenceToVerify.Parts.Count)
             {
                 Debug.Log(sequenceToVerify.name + " Is Validated");
+                OnSequenceValidated.Invoke(sequenceToVerify.NewMood);
                 SequenceToRemove.Add(i);
             }
         }
