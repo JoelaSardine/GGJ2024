@@ -1,3 +1,4 @@
+using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -23,6 +24,7 @@ public class SearchController : SingletonMono<SearchController>
 
     [Header("Opened article")]
     public TextMeshProUGUI articleTitle;
+    public TextMeshProUGUI author;
     public TextMeshProUGUI descriptionTitle;
     public TextMeshProUGUI descriptionBody;
     public TextMeshProUGUI cultureTitle;
@@ -91,14 +93,17 @@ public class SearchController : SingletonMono<SearchController>
             
         }
 
-        layout.enabled = false;
-        layout.enabled = true;
+        
+        //layout.enabled = false;
+        DOVirtual.DelayedCall(0.05f, () => LayoutRebuilder.ForceRebuildLayoutImmediate(layout.GetComponent<RectTransform>()));
     }
 
     public void DisplayArticle(ArticleContent article)
     {
         articleTitle.text = article.title;
-        if(article.description != "")
+        author.text = "Author : " + ( article.author == "" ? "Unknown" : article.author);
+
+        if (article.description != "")
         {
             descriptionTitle.gameObject.SetActive(true);
             descriptionBody.gameObject.SetActive(true);

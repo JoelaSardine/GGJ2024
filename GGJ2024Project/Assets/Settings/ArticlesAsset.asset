@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   raceArticles:
   - title: Zebulon
-    author: 
+    author: Batard
     searchDescription: Les zebulon sont franchement moche, mais bon
     description: "Caract\xE9ristiques : - T\xEAte carr\xE9 - Gros Nez - Yeux rouge"
     culture: "Faire rire un Zebulon :\r\nSi le Zebulon a 2 cornes ou plus vous devez
@@ -37,14 +37,14 @@ MonoBehaviour:
     tags: 
   - title: ra
     author: 
-    searchDescription: 
+    searchDescription: Osef non?
     description: ' player test'
     culture: aaaa
     trivia: azzz
     tags: 
   - title: Blazoid
-    author: 
-    searchDescription: 
+    author: Un dev
+    searchDescription: "Un nom invent\xE9 dans le cadre de ce debug"
     description: dddff  test
     culture: 
     trivia: 
