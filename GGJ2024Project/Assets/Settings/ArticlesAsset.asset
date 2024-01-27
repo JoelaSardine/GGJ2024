@@ -13,19 +13,40 @@ MonoBehaviour:
   m_Name: ArticlesAsset
   m_EditorClassIdentifier: 
   raceArticles:
-  - title: Blazoid
+  - title: Zebulon
     author: 
-    description: test player
-    culture: 
-    trivia: 
+    searchDescription: Les zebulon sont franchement moche, mais bon
+    description: "Caract\xE9ristiques : - T\xEAte carr\xE9 - Gros Nez - Yeux rouge"
+    culture: "Faire rire un Zebulon :\r\nSi le Zebulon a 2 cornes ou plus vous devez
+      faire sonner un klaxon 3 fois et observer sa r\xE9action\r\n   - Si le Zebulon
+      est triste vous devez lui servir un caf\xE9\r\n   - Si le Zebulon est surpris
+      vous devez Saut\xE9 3 fois\r\nSi le Zebulon a une chemise rouge vous devez
+      lui donner un bijoux, saut\xE9 2 fois et observer sa r\xE9action\r\n   - Si
+      le Zebulon est agit\xE9 vous devez faire sonner un klaxon une fois\r\n   -
+      Si le Zebulon est heureux vous devez utiliser le cousin p\xE9teur\r\n   - Si
+      le Zebulon est triste vous devez lui donner de l\u2019argent\r\n   - Si le
+      Zebulon a un chapeau il \xE0 le m\xEAme humour que les Plutonien (une autre
+      race alien) (c\u2019est un proposition pour ajouter de la complexit\xE9)"
+    trivia: "Si le Zebulon a une chemise rouge vous devez lui donner un bijoux, saut\xE9
+      2 fois et observer sa r\xE9action\r\n   - Si le Zebulon est agit\xE9 vous devez
+      faire sonner un klaxon une fois\r\n   - Si le Zebulon est heureux vous devez
+      utiliser le cousin p\xE9teur\r\n   - Si le Zebulon est triste vous devez lui
+      donner de l\u2019argent\r\n   - Si le Zebulon a un chapeau il \xE0 le m\xEAme
+      humour que les Plutonien (une autre race alien) (c\u2019est un proposition
+      pour ajouter de la complexit\xE9)"
+    tags: 
   - title: ra
     author: 
+    searchDescription: 
     description: ' player test'
-    culture: 
-    trivia: 
+    culture: aaaa
+    trivia: azzz
+    tags: 
   - title: Blazoid
     author: 
+    searchDescription: 
     description: dddff  test
     culture: 
     trivia: 
+    tags: 
   cultureArticles: []

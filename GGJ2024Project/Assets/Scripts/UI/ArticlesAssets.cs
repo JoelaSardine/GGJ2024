@@ -8,9 +8,16 @@ public class ArticleContent
 {
     public string title;
     public string author;
+    [TextArea]
+    public string searchDescription;
+    [TextArea]
     public string description;
+    [TextArea]
     public string culture;
+    [TextArea]
     public string trivia;
+    [TextArea]
+    public string tags;
 }
 
 [CreateAssetMenu(fileName = "ArticlesAsset", menuName = "ScriptableObjects/ArticlesAsset", order = 1)]
@@ -19,12 +26,6 @@ public class ArticlesAssets : ScriptableObject
     [SerializeField]
     public List<ArticleContent> raceArticles;
     public List<ArticleContent> cultureArticles;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     public List<ArticleContent> GetArticlesByTags(List<string> tags)
     {
