@@ -293,7 +293,7 @@ Transform:
   m_GameObject: {fileID: 4549517044363468964}
   serializedVersion: 2
   m_LocalRotation: {x: -0.13052624, y: 0, z: 0, w: 0.9914449}
-  m_LocalPosition: {x: 0, y: -0.2, z: 1.2}
+  m_LocalPosition: {x: 0, y: -0.2, z: 0.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -650,9 +650,12 @@ MonoBehaviour:
   GrabRadius: 0.1
   Mask:
     serializedVersion: 2
-    m_Bits: 119
+    m_Bits: 375
   GrabText: {fileID: 5051802766215869153}
   GrabPointer: {fileID: 8522174783535776915}
+  OnInteractWith:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!4 &2901605918117819539 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8997996947095583982, guid: c5efc39a8aaf6e64ea40e9ad573e9b47,
