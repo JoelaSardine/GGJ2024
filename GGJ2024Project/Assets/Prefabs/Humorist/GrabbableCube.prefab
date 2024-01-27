@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 7702967821925798349}
   - component: {fileID: 3605096336453035857}
   - component: {fileID: 3054597534690052222}
+  - component: {fileID: 2122863326176335963}
   m_Layer: 0
   m_Name: GrabbableCube
   m_TagString: Untagged
@@ -148,3 +149,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Speed: 20
   AngularSpeed: 0.05
+  OnInteract:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &2122863326176335963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3183376219652428502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f70d70c4f9612ca4d98f6b47b4b4881d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: {fileID: 11400000, guid: 7ceeaecbb74c6254fbaf4e49cdd095cd, type: 2}

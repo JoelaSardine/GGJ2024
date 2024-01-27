@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 [RequireComponent(typeof(Rigidbody))]
-public class Grabbable : MonoBehaviour
+public class Grabable : MonoBehaviour
 {
     [SerializeField] private float Speed, AngularSpeed;
+    [SerializeField] private UnityEvent OnInteract;
 
     [System.NonSerialized]
     public bool Hoovered = false;
@@ -44,9 +46,9 @@ public class Grabbable : MonoBehaviour
         gameObject.layer = initialLayer;
     }
 
-    public virtual void Interact()
+    public void Interact()
     {
-        
+        OnInteract.Invoke();
     }
 
     public void OnDrawGizmos()
