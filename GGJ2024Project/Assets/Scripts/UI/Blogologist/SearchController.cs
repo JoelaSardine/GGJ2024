@@ -59,17 +59,16 @@ public class SearchController : SingletonMono<SearchController>
         List<string> tags = new List<string>();
 
         fieldContent.Replace(' ', ',');
+        fieldContent.ToLowerInvariant();
         string[] splited = fieldContent.Split(',');
         
         foreach(string s in splited)
         {
             if(s != "" && s != " " && !tags.Contains(s))
             {
-                tags.Add(s);
+                tags.Add(s.ToLowerInvariant());
             }
         }
-
-        print(articles.GetArticlesByTags(tags).Count);
 
         DisplayResult(articles.GetArticlesByTags(tags));
     }

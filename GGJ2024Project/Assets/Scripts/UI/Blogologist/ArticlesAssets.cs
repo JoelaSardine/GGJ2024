@@ -37,7 +37,8 @@ public class ArticlesAssets : ScriptableObject
             bool isOk = true;
             foreach (string t in tags)
             {
-                if (a.description.Contains(t) || a.culture.Contains(t) || a.trivia.Contains(t))
+                if (a.description.ToLowerInvariant().Contains(t) || a.culture.ToLowerInvariant().Contains(t) 
+                    || a.trivia.ToLowerInvariant().Contains(t) || a.tags.ToLowerInvariant().Contains(t))
                 {
                     
                 }
@@ -64,7 +65,8 @@ public class ArticlesAssets : ScriptableObject
             bool isOk = true;
             foreach (string t in tags)
             {
-                if (a.description.Contains(t) || a.culture.Contains(t) || a.trivia.Contains(t))
+                if (a.description.ToLowerInvariant().Contains(t) || a.culture.ToLowerInvariant().Contains(t) 
+                    || a.trivia.ToLowerInvariant().Contains(t) || a.tags.ToLowerInvariant().Contains(t))
                 {
 
                 }
