@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.InputSystem;
 
 public class Grabber : MonoBehaviour
@@ -9,33 +10,40 @@ public class Grabber : MonoBehaviour
     [SerializeField] private LayerMask Mask;
     [SerializeField] private TMP_Text GrabText, GrabPointer;
 
-    private Grabbable currentGrabbable, hoveringGrabbable;
-    private bool grab;
+    private Grabable _currentGrabable, _hoveringGrabable;
+    private bool grab, interact;
     private PlayerInput input;
-    
-    void Start()
-    {
-    }
 
+    public UnityEvent<Grabable> OnInteractWith;
+    
     public void OnGrab()
     {
         grab = !grab;
     }
+
+    public void OnInteract()
+    {
+	    if (_currentGrabable)
+	    {
+		    _currentGrabable.Interact();
+		    OnInteractWith.Invoke(_currentGrabable);
+	    }
+    }
     
     void Update()
     {
-	    Grabbable previousHovering = this.hoveringGrabbable;
-	    this.hoveringGrabbable = null;
+	    Grabable previousHovering = this._hoveringGrabable;
+	    this._hoveringGrabable = null;
 
-	    if (currentGrabbable)
+	    if (_currentGrabable)
 	    {
 		    GrabPointer.transform.localEulerAngles = Vector3.forward * 45f;
 
-		    currentGrabbable.FollowTarget(Target);
+		    _currentGrabable.FollowTarget(Target);
 		    if (!grab)
 		    {
-			    currentGrabbable.StopGrab();
-			    currentGrabbable = null;
+			    _currentGrabable.StopGrab();
+			    _currentGrabable = null;
 		    }
 	    }
 	    else
@@ -45,28 +53,28 @@ public class Grabber : MonoBehaviour
             Ray ray = new Ray(Visor.position, Visor.forward);
 		    if (Physics.SphereCast(ray, GrabRadius, out RaycastHit hit, GrabDistance, Mask))
 		    {
-			    hoveringGrabbable = hit.rigidbody?.GetComponent<Grabbable>();
+			    _hoveringGrabable = hit.rigidbody?.GetComponent<Grabable>();
 
-			    if (grab && hoveringGrabbable)
+			    if (grab && _hoveringGrabable)
 			    {
-				    currentGrabbable = hoveringGrabbable;
-				    hoveringGrabbable = null;
+				    _currentGrabable = _hoveringGrabable;
+				    _hoveringGrabable = null;
 
-				    currentGrabbable.StartGrab();
+				    _currentGrabable.StartGrab();
 			    }
             }
 	    }
         
 	    // Refresh hoovering
-        if (previousHovering && previousHovering != hoveringGrabbable)
+        if (previousHovering && previousHovering != _hoveringGrabable)
         {
 	        previousHovering.Hoovered = false;
         }
 
-        if (hoveringGrabbable)
+        if (_hoveringGrabable)
         {
-	        hoveringGrabbable.Hoovered = true;
-	        this.GrabText.text = $"Grab {hoveringGrabbable.name}";
+	        _hoveringGrabable.Hoovered = true;
+	        this.GrabText.text = $"Grab {_hoveringGrabable.name}";
         }
         else
         {
@@ -81,11 +89,11 @@ public class Grabber : MonoBehaviour
         Gizmos.color = Color.white * transparent;
         Gizmos.DrawSphere(Target.position, GrabRadius);
         
-        if (currentGrabbable)
+        if (_currentGrabable)
         {
 	        Gizmos.color = Color.green;
         }
-        else if (hoveringGrabbable)
+        else if (_hoveringGrabable)
         {
 	        Gizmos.color = Color.yellow;
         }
