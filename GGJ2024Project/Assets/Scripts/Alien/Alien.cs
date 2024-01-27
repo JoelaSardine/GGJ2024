@@ -19,6 +19,7 @@ public class Alien : MonoBehaviour
 
     public void Init(Transform inPoint, Transform wait, Transform outPoint)
     {
+        verifier = SingletonMono<SequenceVerifier>.Instance;
         transform.position = inPoint.position;
         OutPoint = outPoint;
         SetMood(BaseMood);
