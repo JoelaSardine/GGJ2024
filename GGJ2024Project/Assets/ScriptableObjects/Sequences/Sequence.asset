@@ -19,6 +19,3 @@ MonoBehaviour:
   - Type: 1
     Item: {fileID: 11400000, guid: 7ceeaecbb74c6254fbaf4e49cdd095cd, type: 2}
     Number: 3
-  - Type: 2
-    Item: {fileID: 0}
-    Number: 2
