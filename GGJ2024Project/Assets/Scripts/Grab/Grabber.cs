@@ -13,13 +13,14 @@ public class Grabber : MonoBehaviour
     private bool grab;
     private PlayerInput input;
     
-    void Start()
-    {
-    }
-
     public void OnGrab()
     {
         grab = !grab;
+    }
+
+    public void OnInteract()
+    {
+	    
     }
     
     void Update()

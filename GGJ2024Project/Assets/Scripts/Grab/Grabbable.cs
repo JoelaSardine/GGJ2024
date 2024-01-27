@@ -21,7 +21,13 @@ public class Grabbable : MonoBehaviour
 
     public void FollowTarget(Transform target)
     {
-        //TODO Faire la rotation
+        float angle = 0;
+        Vector3 axis = Vector3.zero;
+        
+        (target.rotation * Quaternion.Inverse(transform.rotation)).ToAngleAxis(out angle, out axis);
+
+        rb.angularVelocity = axis * AngularSpeed * angle;
+        
         Vector3 direction = target.position - transform.position;
         rb.velocity = direction * Speed;
     }
@@ -36,6 +42,11 @@ public class Grabbable : MonoBehaviour
     {
         rb.useGravity = true;
         gameObject.layer = initialLayer;
+    }
+
+    public virtual void Interact()
+    {
+        
     }
 
     public void OnDrawGizmos()
