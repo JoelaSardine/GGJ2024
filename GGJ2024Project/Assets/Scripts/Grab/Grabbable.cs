@@ -11,10 +11,12 @@ public class Grabbable : MonoBehaviour
     public bool Hoovered = false;
 
     private Rigidbody rb;
+    private int initialLayer;
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        initialLayer = gameObject.layer;
     }
 
     public void FollowTarget(Transform target)
@@ -26,12 +28,14 @@ public class Grabbable : MonoBehaviour
 
     public void StartGrab()
     {
+	    gameObject.layer = LayerMask.NameToLayer("Grabbed");
         rb.useGravity = false;
     }
 
     public void StopGrab()
     {
         rb.useGravity = true;
+        gameObject.layer = initialLayer;
     }
 
     public void OnDrawGizmos()
