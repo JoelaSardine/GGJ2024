@@ -10,7 +10,7 @@ public class Grabber : MonoBehaviour
     [SerializeField] private TMP_Text GrabText, GrabPointer;
 
     private Grabbable currentGrabbable, hoveringGrabbable;
-    private bool grab;
+    private bool grab, interact;
     private PlayerInput input;
     
     public void OnGrab()
@@ -20,7 +20,10 @@ public class Grabber : MonoBehaviour
 
     public void OnInteract()
     {
-	    
+	    if (currentGrabbable)
+	    {
+		    currentGrabbable.Interact();
+	    }
     }
     
     void Update()
