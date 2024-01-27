@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class SequenceVerifier : MonoBehaviour
+public class SequenceVerifier : SingletonMono<SequenceVerifier>
 {
     [SerializeField] private float InteractionTimer;
     public UnityEvent<Mood> OnSequenceValidated;
