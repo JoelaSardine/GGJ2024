@@ -15,7 +15,8 @@ public class AlienSpawner : MonoBehaviour
     {
         if (currentAlien == null)
         {
-            currentAlien = Instantiate(AlienPrefab).GetComponent<Alien>();
+            GameObject go = Instantiate(AlienPrefab);
+            currentAlien = go.GetComponent<Alien>();
             currentAlien.Init(StartPoint, WaitPoint, OutPoint);
         }
     }
