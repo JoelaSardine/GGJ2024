@@ -24,6 +24,8 @@ public class Grabber : MonoBehaviour
     
     void Update()
     {
+	    Grabbable previousHovering = this.hoveringGrabbable;
+
         if (!currentGrabbable)
         {
             RaycastHit hit;
@@ -31,6 +33,11 @@ public class Grabber : MonoBehaviour
             if (Physics.SphereCast(ray, GrabRadius, out hit, GrabDistance, Mask))
             {
                 hoveringGrabbable = hit.rigidbody?.GetComponent<Grabbable>();
+
+                if (hoveringGrabbable)
+                {
+	                hoveringGrabbable.Hoovered = true;
+                }
             }
             else
             {
@@ -52,5 +59,34 @@ public class Grabber : MonoBehaviour
                 currentGrabbable = null;
             }
         }
+
+        if (previousHovering && previousHovering != hoveringGrabbable)
+        {
+	        previousHovering.Hoovered = false;
+        }
+    }
+
+    void OnDrawGizmosSelected()
+    {
+	    Color transparent = new Color(1f, 1f, 1f, 0.5f);
+	    
+        Gizmos.color = Color.white * transparent;
+        Gizmos.DrawSphere(Target.position, GrabRadius / 2f);
+        
+        if (currentGrabbable)
+        {
+	        Gizmos.color = Color.green;
+        }
+        else if (hoveringGrabbable)
+        {
+	        Gizmos.color = Color.yellow;
+        }
+        else
+        {
+	        Gizmos.color = Color.blue;
+        }
+        
+        Gizmos.color *= transparent;
+        Gizmos.DrawSphere(Visor.position + Visor.forward * GrabDistance, GrabRadius);
     }
 }
