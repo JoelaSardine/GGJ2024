@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Xml;
 using UnityEngine;
 
 [Serializable]
@@ -86,5 +87,62 @@ public class ArticlesAssets : ScriptableObject
         }
 
         return result;
+    }
+
+    public void UpdateRacesArticles()
+    {
+        raceArticles.Clear();
+
+        string xmlFilePath = "Assets/Settings/ArticleRacesData.xml";
+
+        // Load the XML document
+        XmlDocument xmlDoc = new XmlDocument();
+        xmlDoc.Load(xmlFilePath);
+
+        // Get the root element
+        XmlElement root = xmlDoc.DocumentElement;
+
+        // Iterate through child nodes or perform other operations
+        foreach (XmlNode node in root.ChildNodes)
+        {
+            ArticleContent newArticle = new ArticleContent();
+            newArticle.title = node.Name;
+            newArticle.author = node.Attributes["Author"].Value;
+            newArticle.searchDescription = node.Attributes["Summary"].Value;
+            newArticle.description = node.Attributes["Description"].Value;
+            newArticle.culture = node.Attributes["Culture"].Value;
+            newArticle.trivia = node.Attributes["Trivia"].Value;
+            newArticle.tags = node.Attributes["Tags"].Value;
+
+            raceArticles.Add(newArticle);
+        }
+    }
+
+    public void UpdateCultureArticles()
+    {
+        cultureArticles.Clear();
+
+        string xmlFilePath = "Assets/Settings/ArticleCulturesData.xml";
+
+        // Load the XML document
+        XmlDocument xmlDoc = new XmlDocument();
+        xmlDoc.Load(xmlFilePath);
+
+        // Get the root element
+        XmlElement root = xmlDoc.DocumentElement;
+
+        // Iterate through child nodes or perform other operations
+        foreach (XmlNode node in root.ChildNodes)
+        {
+            ArticleContent newArticle = new ArticleContent();
+            newArticle.title = node.Name;
+            newArticle.author = node.Attributes["Author"].Value;
+            newArticle.description = node.Attributes["Description"].Value;
+            newArticle.culture = node.Attributes["Culture"].Value;
+            newArticle.trivia = node.Attributes["Trivia"].Value;
+            newArticle.tags = node.Attributes["Tags"].Value;
+
+            cultureArticles.Add(newArticle);
+        }
     }
 }
