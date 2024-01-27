@@ -18,6 +18,6 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
-    path: Assets/StarterAssets/FirstPersonController/Scenes/Playground.unity
+    path: Assets/Scenes/Test/Playground.unity
     guid: 707acc8dffb72b144bb1ffbe1c965f3d
   m_configObjects: {}
