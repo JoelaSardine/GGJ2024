@@ -6,6 +6,18 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Main.unity
+    guid: 7d740422da7f5514caab092c77df7bcc
+  - enabled: 1
+    path: Assets/Scenes/Blagologist.unity
+    guid: 309fa4f14ee076640b8a37cc8216e230
+  - enabled: 1
+    path: Assets/Scenes/Humorist.unity
+    guid: 1f7f4c0d85d76be4593d78b3ef9b70f2
+  - enabled: 1
     path: Assets/Scenes/SampleScene.unity
-    guid: 99c9720ab356a0642a771bea13969a05
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/StarterAssets/FirstPersonController/Scenes/Playground.unity
+    guid: 707acc8dffb72b144bb1ffbe1c965f3d
   m_configObjects: {}
