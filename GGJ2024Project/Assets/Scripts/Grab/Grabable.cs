@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.Events;
 
 [RequireComponent(typeof(Rigidbody))]
-public class Grabbable : MonoBehaviour
+public class Grabable : MonoBehaviour
 {
     [SerializeField] private float Speed, AngularSpeed;
     [SerializeField] private UnityEvent OnInteract;
