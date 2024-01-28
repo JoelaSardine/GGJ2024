@@ -5,16 +5,11 @@ public class RaceDefinition : ScriptableObject
 {
 	public string Name;
 	public RacialFeature[] Features;
+}
 
-
-	[System.Serializable]
-	public class RacialFeature
-	{
-		// Ex : 2 Big Yellow Noses
-		public string Name;
-		public RacialSlot Slot;
-		public RacialTrait[] Traits;
-
-		public Texture Texture;
-	}
+[System.Serializable]
+public class RacialFeature : AbstractFeature
+{
+	public RacialSlot Slot;
+	public RacialTrait[] Traits;
 }
