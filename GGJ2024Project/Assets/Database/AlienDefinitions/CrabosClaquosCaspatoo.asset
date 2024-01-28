@@ -15,4 +15,4 @@ MonoBehaviour:
   Name: Volcanian
   Race: {fileID: 11400000, guid: a7593b0f7b3c74f42b8b4ba0d27d46f4, type: 2}
   Culture: {fileID: 11400000, guid: 0b591283c2cfd004a9eb587393fd064b, type: 2}
-  LaughingSequence: {fileID: 11400000, guid: 342104fd153879e40a5e31e710142408, type: 2}
+  LaughingSequence: {fileID: 11400000, guid: 44d591530f1c9b2489e0e06b4f6702b3, type: 2}
