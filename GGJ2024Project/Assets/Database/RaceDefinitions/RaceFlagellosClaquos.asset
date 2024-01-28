@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4b197f5ea70ab242b700d098058baa5, type: 3}
+  m_Name: RaceFlagellosClaquos
+  m_EditorClassIdentifier: 
+  Name: Flagellos claquos
+  TraitType: 1
+  UsualMood: 0
+  Features:
+  - Name: Squared head
+    Slot: 4
+    Color: {r: 1, g: 1, b: 1, a: 1}
+    Sprite: {fileID: 21300000, guid: e11d609eb3b16fc458d2f35608a4028b, type: 3}
+    ColorOverrides: []
+    TextureOverrides: []
+  - Name: Nose ong
+    Slot: 10
+    Color: {r: 1, g: 1, b: 1, a: 1}
+    Sprite: {fileID: 21300000, guid: a122af5db48bdde41bcab10cc72a9f68, type: 3}
+    ColorOverrides: []
+    TextureOverrides:
+    - Mood: 1
+      Value: {fileID: -363493253, guid: 9662ef20e7ea76d4f8a38f3d9a1aecaf, type: 3}
+    - Mood: 2
+      Value: {fileID: 1733793749, guid: 9662ef20e7ea76d4f8a38f3d9a1aecaf, type: 3}
+    - Mood: 3
+      Value: {fileID: -2135148278, guid: 9662ef20e7ea76d4f8a38f3d9a1aecaf, type: 3}
+  - Name: Two red Eyes
+    Slot: 9
+    Color: {r: 1, g: 1, b: 1, a: 1}
+    Sprite: {fileID: 21300000, guid: 8c1c7330c89193a43a65c3e0636d6af3, type: 3}
+    ColorOverrides: []
+    TextureOverrides:
+    - Mood: 0
+      Value: {fileID: 21300000, guid: 8c1c7330c89193a43a65c3e0636d6af3, type: 3}
+    - Mood: 1
+      Value: {fileID: 21300000, guid: 0f27e9078a753814fb961b1e8272b2f0, type: 3}
+    - Mood: 3
+      Value: {fileID: 21300000, guid: 7008b5a58e363df4ea204059a323334d, type: 3}
+    - Mood: 2
+      Value: {fileID: 21300000, guid: d2281a264599ddb478e960188dfcbe2d, type: 3}
+  - Name: Long thin arm
+    Slot: 2
+    Color: {r: 1, g: 1, b: 1, a: 1}
+    Sprite: {fileID: 21300000, guid: 01333b03da29aba4fb1f03f55f9dc92d, type: 3}
+    ColorOverrides: []
+    TextureOverrides: []
+  - Name: Horn Pointy
+    Slot: 3
+    Color: {r: 1, g: 1, b: 1, a: 1}
+    Sprite: {fileID: 21300000, guid: 78d85e30354073e45925081277078500, type: 3}
+    ColorOverrides: []
+    TextureOverrides: []
+  Reactions: []
