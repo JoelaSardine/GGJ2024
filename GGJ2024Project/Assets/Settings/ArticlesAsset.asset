@@ -97,7 +97,8 @@ MonoBehaviour:
     culture: "Les Crabox sont r\xE9put\xE9s de grands marchands, et la culture Crabox
       repose essentiellement sur le commerce qu'ils effectuent dans toutes les zones
       connues de la galaxie. \nIl partage la m\xEAme culture et humour que les Flagellos
-      claquos"
+      claquos, Sauf les Crabox de culture Caspatoo qui rigole quand on leur donne
+      un cadeau et qu'on leur fait \xE9couter de la musique."
     trivia: 
     tags: "Ventouse \xE0 chiottes"
   - title: Flagellos claquos
@@ -120,6 +121,25 @@ MonoBehaviour:
       cadeau et flexer 3 fois avec une alterre"
     trivia: 
     tags: Spatule
+  - title: Brutus sardinus
+    author: "Rapporteur de bugs d\xE9sabus\xE9 #2"
+    searchDescription: "Attention son nom est trompeur, il ne d\xE9crit pas du tout
+      ce que c'est, il s'agit d'une erreur de ligne dans la base de donn\xE9es mais
+      personne ne l'a corrig\xE9.\nPhysiquement, ressemble \xE0 une petite succube
+      violette en surpoids avec une couronne et une cape dor\xE9s."
+    description: "L'Empire des Brutus Sardinus est r\xE9git par un syst\xE8me de
+      castes matriarchales tr\xE8s complexe et impitoyable. \n\nLes Brutus Sardinus
+      sont facilement reconnaissables \xE0 leur visage myst\xE9rieux pr\xE9sentant
+      4 cornes et 6 yeux.\n\nLeur caste peut \xEAtre devin\xE9e \xE0 la couleur de
+      leur peau et leur nombre de bras, et non \xE0 leur tenue car ils portent traditionnellement
+      le 'Bearh Go', une pi\xE8ce de tissu ocre drap\xE9e autour des \xE9paules."
+    culture: "Cette race expose souvent 2 cultures:\n- Les Moisis\n    - Pour les
+      faire rire il faut lancer de la musique, interagir avec un trophy puis avec
+      un cadeau, et enfin leur offrir le cadeau\n- Les Stelehair\n    - Pour les
+      faire rire il faut interagir avec un arrosoir puis avec un troph\xE9e, et enfin
+      leur offir le troph\xE9e"
+    trivia: 
+    tags: 
   cultureArticles:
   - title: Les competiteurs
     author: 
@@ -127,10 +147,10 @@ MonoBehaviour:
       que perdre"'
     description: Comme leur nom l'inidique, ils aiment la competition et surtout
       gagner !
-    culture: 
+    culture: ' '
     trivia: "Les r\xE9compenses et prix sont tr\xE9s important dans leurs vision
       de la competition"
-    tags: ' '
+    tags: 
   - title: Les adorateurs de Bo-Vay
     author: 
     searchDescription: "Culture n\xE9e dans l'un des derniers bastions d'une lointaine
@@ -172,6 +192,48 @@ MonoBehaviour:
       !
 
       En revanche ils ont une peut absolu de l''eau'
+    culture: 
+    trivia: 
+    tags: 
+  - title: Caspatoo
+    author: 
+    searchDescription: 
+    description: "Les Caspatoo sont un peuple pacifique qui d\xE9teste la violence
+      et les objets permettant la violence, ce sont par ailleur des artisans hors
+      pair car ils adorent r\xE9parer tous les objets d\xE9truis par les autres aliens.
+      Ils ont aussi la main verte et aime les outil de jardinnage. Pour une raison
+      inconnue les aliens de cette culture on g\xE9n\xE9ralement un nez rouge. Plus
+      ample recherche sont n\xE9c\xE9ssaire pour comprendre cette particularit\xE9."
+    culture: 
+    trivia: 
+    tags: 
+  - title: Moisis
+    author: Sardinus
+    searchDescription: "Une culture qui consiste \xE0 f\xEAter son anniversaire chaque
+      mois avec ses amis.\n\nPour les faire rire, il faut toujours: Mettre de la
+      musique, mettre un objet dans un cadeau et leur offrir."
+    description: "Le Moisisme consiste \xE0 rejeter la tradition de la f\xEAte d'Anniversaire
+      pour la remplacer par les Moisiversaires, une f\xEAte organis\xE9e tous les
+      mois durant laquelle on s'offre des cadeaux et on \xE9coute de la musique tr\xE8s
+      fort.\n\nLes Moisis portent g\xE9n\xE9ralement de petits chapeaux festifs en
+      forme de c\xF4ne, et on d\xE9testent les Claquilipas car les moisis proscrivent
+      le fait de manger de la nourriture tout en \xE9coutant de la musique.\n\nLe
+      courant Moisi ne cesse de gagner en popularit\xE9 et touche de plus en plus
+      de races avec l'essor des R\xE9seaux Sociaux Intergalactiques."
+    culture: 
+    trivia: 
+    tags: 
+  - title: Stelehair
+    author: Sardinus
+    searchDescription: "Une culture qui rejette le port de tout v\xEAtement - \xE0
+      part un collier appel\xE9 \"Etoimulette\" - pour \xEAtre en communion avec
+      les \xE9toiles.\n\nPour les faire rire, il faut arroser un objet puis leur
+      offrir."
+    description: "Une culture qui rejette le port de tout v\xEAtement - \xE0 part
+      un collier appel\xE9 \"Etoimulette\" - pour \xEAtre en communion avec les \xE9toiles.\n\n-
+      Porte pour tout v\xEAtement une amulette \xE9toil\xE9e\n- Aime les halteres
+      et respecte les gens qui font de la muscu \n- N'aime pas qu'on leur offre des
+      cadeaux Gift \n- N'aime pas qu'on utilise un Marteau"
     culture: 
     trivia: 
     tags: 
