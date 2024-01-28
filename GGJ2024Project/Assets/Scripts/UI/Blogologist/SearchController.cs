@@ -48,7 +48,7 @@ public class SearchController : SingletonMono<SearchController>
             searchResult.Add(newresult);
         }
 
-        StartSearch("");
+        StartSearch("race");
     }
 
     // Update is called once per frame
@@ -61,9 +61,9 @@ public class SearchController : SingletonMono<SearchController>
     {
         List<string> tags = new List<string>();
 
-        fieldContent.Replace(' ', ',');
+        fieldContent.Replace(',', ' ');
         fieldContent.ToLowerInvariant();
-        string[] splited = fieldContent.Split(',');
+        string[] splited = fieldContent.Split(' ');
         
         foreach(string s in splited)
         {
@@ -73,20 +73,19 @@ public class SearchController : SingletonMono<SearchController>
             }
         }
 
-        DisplayResult(articles.GetArticlesByTags(tags));
+        DisplayResult(articles.GetArticlesRankedByTags(tags));
     }
     
-    public void DisplayResult(List<ArticleContent> articles)
+    public void DisplayResult(List<KeyValuePair<ArticleContent, int>> articles)
     {
-
         for (int i =0; i < maxSearchResult; i++)
         {
             if( i < articles.Count)
             {
                 searchResult[i].gameObject.SetActive(true);
-                searchResult[i].title.text = articles[i].title;
-                searchResult[i].description.text = articles[i].searchDescription;
-                searchResult[i].linkedArticle = articles[i];
+                searchResult[i].title.text = articles[i].Key.title;
+                searchResult[i].description.text = articles[i].Key.searchDescription;
+                searchResult[i].linkedArticle = articles[i].Key;
             }
             else
             {
