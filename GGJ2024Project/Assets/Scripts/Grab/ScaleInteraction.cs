@@ -6,9 +6,10 @@ using UnityEngine;
 
 public class ScaleInteraction : MonoBehaviour
 {
-    [SerializeField] private float scale = 1.25f;
+    [SerializeField] private float scale = 1.25f, duration = 0.5f;
+    [SerializeField] private bool loop;
 
-    private Tween tween;
+    private DG.Tweening.Sequence tween;
     private Vector3 baseScale;
 
     private void Awake()
@@ -18,9 +19,24 @@ public class ScaleInteraction : MonoBehaviour
 
     public void Interact()
     {
-        if(tween != null) tween.Kill();
+        if (tween != null)
+        {
+            tween.Kill();
+            tween = null;
+            if (loop)
+            {
+                transform.localScale = baseScale;
+                return;
+            }
+        }
         
         transform.localScale = baseScale;
-        tween = transform.DOPunchScale(Vector3.one * scale, 0.25f);
+        tween = DOTween.Sequence();
+        tween.Append(transform.DOPunchScale(Vector3.one * scale, duration));
+        if (loop)
+        {
+            tween.AppendInterval(duration);
+            tween.SetLoops(-1);
+        }
     }
 }

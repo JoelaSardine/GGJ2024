@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 175231079065629384}
   - component: {fileID: 2585000086332311674}
   - component: {fileID: 320968248648165983}
-  - component: {fileID: 3550944196259987556}
+  - component: {fileID: 385516617226409004}
   m_Layer: 8
   m_Name: Watering can
   m_TagString: Untagged
@@ -80,10 +80,10 @@ MonoBehaviour:
   OnInteract:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3550944196259987556}
-        m_TargetAssemblyTypeName: ScaleInteraction, Assembly-CSharp
+      - m_Target: {fileID: 385516617226409004}
+        m_TargetAssemblyTypeName: AnimInteraction, Assembly-CSharp
         m_MethodName: Interact
-        m_Mode: 1
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -92,6 +92,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  CanGrab: 1
 --- !u!114 &320968248648165983
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -105,7 +106,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: {fileID: 11400000, guid: ce375879610e42e4e972145ee67d784b, type: 2}
---- !u!114 &3550944196259987556
+--- !u!114 &385516617226409004
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -114,10 +115,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1613352771939426513}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f0be17d7b50086b45bdef11444c3e56c, type: 3}
+  m_Script: {fileID: 11500000, guid: 5f409434cc6a2a54f9d4a45e4c98bc74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scale: 0.1
+  animationID: 2
+  loop: 1
+  destroy: 0
 --- !u!1001 &748319553809682623
 PrefabInstance:
   m_ObjectHideFlags: 0

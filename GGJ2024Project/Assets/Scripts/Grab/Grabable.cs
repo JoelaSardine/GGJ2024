@@ -30,8 +30,6 @@ public class Grabable : MonoBehaviour
         
         (target.rotation * Quaternion.Inverse(transform.rotation)).ToAngleAxis(out angle, out axis);
 
-        Debug.Log(axis + " : " + angle);
-        
         if (angle > 180)
         {
             axis *= -1;
