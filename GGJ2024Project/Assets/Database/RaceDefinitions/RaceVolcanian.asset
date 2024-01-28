@@ -28,10 +28,10 @@ MonoBehaviour:
     Sprite: {fileID: 21300000, guid: e11d609eb3b16fc458d2f35608a4028b, type: 3}
     ColorOverrides: []
     TextureOverrides: []
-  - Name: 2 bras 2 doigts
-    Slot: 2
-    Color: {r: 0.59607846, g: 0.078431375, b: 0.05490196, a: 1}
-    Sprite: {fileID: 21300000, guid: 01333b03da29aba4fb1f03f55f9dc92d, type: 3}
+  - Name: 4 oreilles en trompette
+    Slot: 7
+    Color: {r: 0.5294118, g: 0.08627451, b: 0.050980393, a: 1}
+    Sprite: {fileID: 21300000, guid: baae468799d492940a0a3a5127cda781, type: 3}
     ColorOverrides: []
     TextureOverrides: []
   - Name: Nez de cochon
@@ -46,18 +46,6 @@ MonoBehaviour:
     Sprite: {fileID: 21300000, guid: 128074356e7f9734bbe7381059c9aaa9, type: 3}
     ColorOverrides: []
     TextureOverrides: []
-  - Name: 3 Yeux roses
-    Slot: 9
-    Color: {r: 1, g: 0.59607846, b: 0.5882353, a: 1}
-    Sprite: {fileID: 21300000, guid: 87e86b64614bee1428b3b87509140365, type: 3}
-    ColorOverrides: []
-    TextureOverrides:
-    - Mood: 1
-      Value: {fileID: 21300000, guid: 1e5a597f37c1f2644ad53fb8fc25cc84, type: 3}
-    - Mood: 2
-      Value: {fileID: 21300000, guid: 59a2e79cec504c141993f4456fd8658c, type: 3}
-    - Mood: 3
-      Value: {fileID: 21300000, guid: 900b6682f42ae674fbc92ab6be31be6a, type: 3}
   - Name: 3 Yeux roses
     Slot: 9
     Color: {r: 1, g: 0.59607846, b: 0.5882353, a: 1}
