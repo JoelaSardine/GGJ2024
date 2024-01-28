@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "NewRaceDefinition", menuName = "GGJ24/RaceDefinition", order = 1)]
+[System.ObsoleteAttribute]
 public class RaceDefinition : ScriptableObject
 {
 	public string Name;
@@ -9,6 +9,7 @@ public class RaceDefinition : ScriptableObject
 	public List<Sequence> Reactions;
 }
 
+[System.ObsoleteAttribute]
 [System.Serializable]
 public class RacialFeature : AbstractFeature
 {

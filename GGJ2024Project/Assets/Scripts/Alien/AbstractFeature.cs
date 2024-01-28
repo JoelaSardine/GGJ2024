@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 
+[System.ObsoleteAttribute]
 public abstract class AbstractFeature
 {
 	public string Name;

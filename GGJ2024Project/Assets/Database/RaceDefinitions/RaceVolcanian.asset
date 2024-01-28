@@ -9,33 +9,35 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7bfff5cef05f5444e97ee4d0c2b2e7a1, type: 3}
+  m_Script: {fileID: 11500000, guid: d4b197f5ea70ab242b700d098058baa5, type: 3}
   m_Name: RaceVolcanian
   m_EditorClassIdentifier: 
   Name: Volcanian
+  TraitType: 1
+  UsualMood: 0
   Features:
   - Name: Red Big Body
-    Color: {r: 0.5943396, g: 0, b: 0, a: 1}
-    Sprite: {fileID: -207360425, guid: 9662ef20e7ea76d4f8a38f3d9a1aecaf, type: 3}
-    LaughingOverride: {fileID: 0}
-    HappyOverride: {fileID: 0}
-    SadOverride: {fileID: 0}
     Slot: 1
-    Traits: 0100000005000000
-  - Name: Three Yellow Eyes
-    Color: {r: 0.8666667, g: 0.8862745, b: 0, a: 1}
-    Sprite: {fileID: 2055751727, guid: 9662ef20e7ea76d4f8a38f3d9a1aecaf, type: 3}
-    LaughingOverride: {fileID: 0}
-    HappyOverride: {fileID: 0}
-    SadOverride: {fileID: 0}
-    Slot: 5
-    Traits: 080000000200000001000000
+    Color: {r: 0.59607846, g: 0, b: 0, a: 1}
+    Sprite: {fileID: -207360425, guid: 9662ef20e7ea76d4f8a38f3d9a1aecaf, type: 3}
+    ColorOverrides: []
+    TextureOverrides: []
   - Name: Mouth
+    Slot: 8
     Color: {r: 1, g: 1, b: 1, a: 1}
     Sprite: {fileID: 1869223693, guid: 9662ef20e7ea76d4f8a38f3d9a1aecaf, type: 3}
-    LaughingOverride: {fileID: -2135148278, guid: 9662ef20e7ea76d4f8a38f3d9a1aecaf,
-      type: 3}
-    HappyOverride: {fileID: 1733793749, guid: 9662ef20e7ea76d4f8a38f3d9a1aecaf, type: 3}
-    SadOverride: {fileID: -363493253, guid: 9662ef20e7ea76d4f8a38f3d9a1aecaf, type: 3}
-    Slot: 7
-    Traits: 00000000
+    ColorOverrides: []
+    TextureOverrides:
+    - Mood: 1
+      Value: {fileID: -363493253, guid: 9662ef20e7ea76d4f8a38f3d9a1aecaf, type: 3}
+    - Mood: 2
+      Value: {fileID: 1733793749, guid: 9662ef20e7ea76d4f8a38f3d9a1aecaf, type: 3}
+    - Mood: 3
+      Value: {fileID: -2135148278, guid: 9662ef20e7ea76d4f8a38f3d9a1aecaf, type: 3}
+  - Name: Three Yellow Eyes
+    Slot: 9
+    Color: {r: 0.8666667, g: 0.8862745, b: 0, a: 1}
+    Sprite: {fileID: 2055751727, guid: 9662ef20e7ea76d4f8a38f3d9a1aecaf, type: 3}
+    ColorOverrides: []
+    TextureOverrides: []
+  Reactions: []

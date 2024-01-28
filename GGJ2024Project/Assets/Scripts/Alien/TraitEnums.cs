@@ -2,6 +2,31 @@
 /*
  * Do NOT change numerical values or all Feature references will be corrupted!
  */
+
+public enum AlienTraitType
+{
+	Unspecified = 0,
+
+	Race = 1,
+	Culture = 2,
+}
+
+public enum AlienTraitSlot
+{
+	Invalid = 0,
+
+	Body    = 1,
+	Arm 	= 2,
+	Horn	= 3,
+	Head	= 4,
+	Cloth2 = 5,
+	Cloth1	= 6,
+	Ear		= 7,
+	Mouth	= 8,
+	Eye		= 9,
+	Nose	= 10,
+}
+
 public enum MoodType
 {
 	Neutral  = 0,
@@ -11,6 +36,7 @@ public enum MoodType
 	Laughing = 3,
 }
 
+// OBSOLETE 
 public enum CulturalSlot
 {
 	Invalid = 0,
@@ -18,6 +44,7 @@ public enum CulturalSlot
 	Hat = 1,
 }
 
+// OBSOLETE 
 public enum CulturalTrait
 {
 	Unspecified  = 0,
@@ -34,6 +61,7 @@ public enum CulturalTrait
 	Style_Cowbow = 10, 
 }
 
+// OBSOLETE 
 public enum RacialSlot
 {
 	Invalid = 0,
@@ -51,6 +79,7 @@ public enum RacialSlot
 	Tail    = 11,
 }
 
+// OBSOLETE 
 public enum RacialTrait
 {
 	Unspecified   = 0,

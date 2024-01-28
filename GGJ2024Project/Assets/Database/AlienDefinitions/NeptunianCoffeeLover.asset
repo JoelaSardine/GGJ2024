@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4656ecaccfa4c0d4d95ef87c17ca77b4, type: 3}
-  m_Name: VolcanianCowboy
+  m_Name: NeptunianCoffeeLover
   m_EditorClassIdentifier: 
-  Name: VolcanianCowboy
-  Race: {fileID: 11400000, guid: 85a7d177155aeee42bb1c06485a34de8, type: 2}
-  Culture: {fileID: 11400000, guid: ac49214de1711fd4aa91c8ea91d60861, type: 2}
-  LaughtingSequence: {fileID: 11400000, guid: 7160680efb7b0d84ea3369b3fe0b45ae, type: 2}
+  Name: NeptunianCoffeeLover
+  Race: {fileID: 11400000, guid: cca27a328ed604348ab2b62a220fb0b6, type: 2}
+  Culture: {fileID: 11400000, guid: 890974b52da658745986619d4ef8959e, type: 2}
+  LaughingSequence: {fileID: 11400000, guid: a5167b3792b8514439bb70e4523e514a, type: 2}

@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "NewCultureDefinition", menuName = "GGJ24/CultureDefinition", order = 1)]
+[System.ObsoleteAttribute]
 public class CultureDefinition : ScriptableObject
 {
 	public string Name;
@@ -9,6 +9,7 @@ public class CultureDefinition : ScriptableObject
 	public List<Sequence> Reactions;
 }
 
+[System.ObsoleteAttribute]
 [System.Serializable]
 public class CulturalFeature : AbstractFeature
 {
