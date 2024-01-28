@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4656ecaccfa4c0d4d95ef87c17ca77b4, type: 3}
   m_Name: BrutusStelehair
   m_EditorClassIdentifier: 
-  Name: Brutus Sardinus
+  Name: Brutus Sardinus Stelehair
   Race: {fileID: 11400000, guid: b57b881c225fdf44d8dffdcaffd93ac6, type: 2}
-  Culture: {fileID: 11400000, guid: 38a725d3b611e6544a83e85989a86b66, type: 2}
-  LaughingSequence: {fileID: 11400000, guid: 1f46d6a403150b547882d50af65b99d5, type: 2}
+  Culture: {fileID: 11400000, guid: 07d8fb64b648883419c3f658d10cb698, type: 2}
+  LaughingSequence: {fileID: 11400000, guid: f62acf661e6c45242bd55e80d78f4e92, type: 2}

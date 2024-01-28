@@ -23,7 +23,7 @@ MonoBehaviour:
     ColorOverrides: []
     TextureOverrides: []
   - Name: Etoimulette
-    Slot: 6
+    Slot: 5
     Color: {r: 0.8, g: 0.57254905, b: 0, a: 1}
     Sprite: {fileID: 21300000, guid: 1cc6cf2b2140adb4cbf5d1f930d4ee7e, type: 3}
     ColorOverrides: []
