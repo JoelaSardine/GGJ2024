@@ -731,11 +731,7 @@ MonoBehaviour:
   AlienPrefab: {fileID: 6507667185972426563, guid: ff01eda26d0686743be93d9728417b80,
     type: 3}
   Definitions:
-  - {fileID: 11400000, guid: eb018fcc929372f4e91992902318a515, type: 2}
-  - {fileID: 11400000, guid: 812e6fff66f3d734d9dd8d3b7a5e38c0, type: 2}
-  - {fileID: 11400000, guid: 697160f7ee0c14a48a134e804384147a, type: 2}
-  - {fileID: 11400000, guid: c9fccd3e2ab61a746acba2d54ae2b8b2, type: 2}
-  - {fileID: 11400000, guid: deefc3c8952068d47b7884c0d21133b9, type: 2}
+  - {fileID: 11400000, guid: 7e5cc5da1d3eb8a47aa67688e776e2da, type: 2}
 --- !u!1001 &377371879
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1745,6 +1741,7 @@ MonoBehaviour:
       m_Calls: []
   Detector: {fileID: 1296041857}
   Grabber: {fileID: 2107941336}
+  RecordedItemsInteraction: []
 --- !u!1 &988364749
 GameObject:
   m_ObjectHideFlags: 0

@@ -13,7 +13,8 @@ public class SequenceVerifier : SingletonMono<SequenceVerifier>
     [SerializeField] private ItemDetector Detector;
     [SerializeField] private Grabber Grabber;
 
-    private List<ItemType> RecordedItemsInteraction = new List<ItemType>();
+    [Space]
+    [SerializeField] private List<ItemType> RecordedItemsInteraction = new List<ItemType>();
     private List<Sequence> SequencesToVerify = new List<Sequence>();
     private float timer;
     private int totalItem;
@@ -44,6 +45,17 @@ public class SequenceVerifier : SingletonMono<SequenceVerifier>
         }
     }
 
+    public void AddUniqueInteraction(Grabable grabable)
+    {
+        ItemType item = grabable.GetComponent<Item>()?.type;
+
+        if (!RecordedItemsInteraction.Contains(item))
+        {
+            RecordedItemsInteraction.Add(item);
+            timer = 0;
+        }
+    }
+
     private void Update()
     {
         timer += Time.deltaTime;
@@ -65,7 +77,7 @@ public class SequenceVerifier : SingletonMono<SequenceVerifier>
                 if (VerifySequencePart(part)) validParts++;
             }
 
-            if (validParts == sequenceToVerify.Parts.Count && totalItem == Detector.Items.Count)
+            if (validParts == sequenceToVerify.Parts.Count && (totalItem == 0 || totalItem == Detector.Items.Count))
             {
                 Debug.Log(sequenceToVerify.name + " Is Validated");
                 OnSequenceValidated.Invoke(sequenceToVerify.NewMood);

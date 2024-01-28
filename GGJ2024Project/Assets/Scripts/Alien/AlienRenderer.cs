@@ -68,7 +68,7 @@ public class AlienRenderer : MonoBehaviour
 		renderer.enabled = renderer.sprite != null;
 	}
 	
-	private void Start()
+	private void Awake()
 	{
 		this.SlotRenderers.Add(AlienTraitSlot.Body, this.Body);
 		this.SlotRenderers.Add(AlienTraitSlot.Arm, this.Arm);

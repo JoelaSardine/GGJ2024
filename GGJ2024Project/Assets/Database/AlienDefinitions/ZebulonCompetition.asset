@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Volcanian
   Race: {fileID: 11400000, guid: 047796eefa8fbd5478eee26e7cdec42b, type: 2}
-  Culture: {fileID: 11400000, guid: 3b9fc8add94093342b554346ecb6d73f, type: 2}
+  Culture: {fileID: 11400000, guid: ac2bd0f77e625ef4095530a3be31f639, type: 2}
   LaughingSequence: {fileID: 11400000, guid: 6b9e80125f5303c4ca229ede5649ff59, type: 2}
