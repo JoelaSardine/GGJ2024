@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4656ecaccfa4c0d4d95ef87c17ca77b4, type: 3}
   m_Name: BrutusMoisi
   m_EditorClassIdentifier: 
-  Name: Brutus Sardinus
+  Name: Brutus Sardinus Moisi
   Race: {fileID: 11400000, guid: b57b881c225fdf44d8dffdcaffd93ac6, type: 2}
   Culture: {fileID: 11400000, guid: 38a725d3b611e6544a83e85989a86b66, type: 2}
   LaughingSequence: {fileID: 11400000, guid: 1f46d6a403150b547882d50af65b99d5, type: 2}
