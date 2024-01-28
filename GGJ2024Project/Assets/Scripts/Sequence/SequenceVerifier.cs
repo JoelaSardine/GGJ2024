@@ -64,8 +64,7 @@ public class SequenceVerifier : SingletonMono<SequenceVerifier>
         {
             RecordedItemsInteraction.Clear();
         }
-
-        List<int> SequenceToRemove = new List<int>();
+        
             
         for (int i = 0; i < SequencesToVerify.Count; i++)
         {
@@ -79,15 +78,13 @@ public class SequenceVerifier : SingletonMono<SequenceVerifier>
 
             if (validParts == sequenceToVerify.Parts.Count && (totalItem == 0 || totalItem == Detector.Items.Count))
             {
-                Debug.Log(sequenceToVerify.name + " Is Validated");
                 OnSequenceValidated.Invoke(sequenceToVerify.NewMood);
-                SequenceToRemove.Add(i);
+                if (sequenceToVerify.NewMood == MoodType.Laughing)
+                {
+                    SequencesToVerify.Clear();
+                    return;
+                }
             }
-        }
-
-        foreach (var i in SequenceToRemove)
-        {
-            SequencesToVerify.RemoveAt(i);
         }
     }
 
@@ -115,7 +112,7 @@ public class SequenceVerifier : SingletonMono<SequenceVerifier>
                     if (i == part.Item) num++;
                 }
 
-                return num == part.Number;
+                return num >= part.Number;
                 break;
         }
 

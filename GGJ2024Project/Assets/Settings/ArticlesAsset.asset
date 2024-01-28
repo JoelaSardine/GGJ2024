@@ -13,40 +13,160 @@ MonoBehaviour:
   m_Name: ArticlesAsset
   m_EditorClassIdentifier: 
   raceArticles:
+  - title: Origien
+    author: "Arch\xE9ologue #108"
+    searchDescription: "Ancienne esp\xE8ce, \xE0 l'origine des Zebulons et Viangimites."
+    description: "De nombreuses l\xE9gendes existent \xE0 propos des Origiens, la
+      plus ancienne race connue de la galaxie. Exclusivement origien, l'Empire Ori
+      aurait \xE0 un moment de l'histoire colonis\xE9 plus de 11% des syst\xE8mes
+      de la galaxie, avant de dispara\xEEtre suite \xE0 la cr\xE9ation d'une terrible
+      arme bact\xE9riologique.\nAujourd'hui, seules deux esp\xE8ces se revendiquent
+      issue de la race Origienne: les Zebulon et les Viangimites, dont les mutations
+      les ont immunis\xE9 \xE0 cette arme. \n\nA son apog\xE9e, l'Empire aurait interdit
+      de repr\xE9senter visuellement un Origien par quelque mani\xE8re que ce soit,
+      il n'existe donc que des hypoth\xE8ses quand \xE0 leur apparence physique.
+      \nLes caract\xE9ristiques qui reviennent cependant dans la majorit\xE9 des
+      hypoth\xE8ses sont la pr\xE9sence d'un \xE9norme nez (sans doute responsable
+      de leur extr\xEAme sensibilit\xE9 aux maladies) ainsi que [NOMBRE] yeux rouges."
+    culture: "Aucune certitude ne peut \xEAtre \xE9tablie sur les cultures de cette
+      esp\xE8ce \xE0 l'\xE9poque de l'Empire Ori, qui n'a \xE9tonnament laiss\xE9
+      que peu de traces."
+    trivia: 
+    tags: 
   - title: Zebulon
-    author: Batard
-    searchDescription: Les zebulon sont franchement moche, mais bon
-    description: "Caract\xE9ristiques : - T\xEAte carr\xE9 - Gros Nez - Yeux rouge"
-    culture: "Faire rire un Zebulon :\r\nSi le Zebulon a 2 cornes ou plus vous devez
-      faire sonner un klaxon 3 fois et observer sa r\xE9action\r\n   - Si le Zebulon
-      est triste vous devez lui servir un caf\xE9\r\n   - Si le Zebulon est surpris
-      vous devez Saut\xE9 3 fois\r\nSi le Zebulon a une chemise rouge vous devez
-      lui donner un bijoux, saut\xE9 2 fois et observer sa r\xE9action\r\n   - Si
-      le Zebulon est agit\xE9 vous devez faire sonner un klaxon une fois\r\n   -
-      Si le Zebulon est heureux vous devez utiliser le cousin p\xE9teur\r\n   - Si
-      le Zebulon est triste vous devez lui donner de l\u2019argent\r\n   - Si le
-      Zebulon a un chapeau il \xE0 le m\xEAme humour que les Plutonien (une autre
-      race alien) (c\u2019est un proposition pour ajouter de la complexit\xE9)"
-    trivia: "Si le Zebulon a une chemise rouge vous devez lui donner un bijoux, saut\xE9
-      2 fois et observer sa r\xE9action\r\n   - Si le Zebulon est agit\xE9 vous devez
-      faire sonner un klaxon une fois\r\n   - Si le Zebulon est heureux vous devez
-      utiliser le cousin p\xE9teur\r\n   - Si le Zebulon est triste vous devez lui
-      donner de l\u2019argent\r\n   - Si le Zebulon a un chapeau il \xE0 le m\xEAme
-      humour que les Plutonien (une autre race alien) (c\u2019est un proposition
-      pour ajouter de la complexit\xE9)"
+    author: Baroudeur extraverti #93
+    searchDescription: Des aliens cheums, mais bon ils le savent pas. C'est mieux
+      pour eux
+    description: "Le Zebulon est une esp\xE8ce vivipare hautement technologique qui
+      vit essentiellement sur la plan\xE8te gazeuse Zebul, sans le secteur K-31 pr\xE8s
+      de la Bordure Septentrionale. \n\nJug\xE9 extr\xEAmement repoussante par la
+      majorit\xE9 des esp\xE8ces de la galaxie avec leur t\xEAte carr\xE9e, elle
+      n'a cependant jamais \xE9t\xE9 cit\xE9e dans le \"Guiness Book of Ugliest races
+      of the Galaxy\" gr\xE2ce au grand respect dont ses repr\xE9sentants jouissent
+      au sein de la communaut\xE9 galactique. En effet, descendants de la plus ancienne
+      race connue de la galaxie, dont ils partagent les traits physiques, ils poss\xE8dent
+      de nombreuses technologies encore aujourd'hui in\xE9gal\xE9es ainsi que la
+      cartographie de la galaxie la plus compl\xE8te."
+    culture: "Deux cultures sont dominante sur zebulon :\nLes competiteurs, dont
+      la presence peut etre retrac\xE9 a leurs nombreux comflit et competition avec
+      les viangimite.\nDepuis un evement sportif devenu legendaire chez les Zebulon,
+      les conpititeurs ont develop\xE9 une blague interne qui consiste a manger 5
+      burger avant de brandir un troph\xE9e.\nEt celle de Gomusco, dont la source 
+      est pour le moment dur a cerner.\nUne blague tr\xE9s connu chez les Gomusco
+      consiste a taper 3 fois un arrosoir..."
+    trivia: 
     tags: 
-  - title: ra
+  - title: Viangimite
+    author: Stagiaire #2810
+    searchDescription: "Il adore manger de la viande avec une sauce typiquement de
+      chez eux. A ce jour, cette m\xEAme sauce est utilis\xE9 comme outil de torture
+      sur la plan\xE8te Neptunia."
+    description: "Le Viangimite, \xE9galement connu sous le nom de Viandarien, est
+      un cousin du Zebulon. Il dispose les m\xEAme caract\xE9ristiques physiques
+      que ces derniers \xE0 l'exception d'une grand bouches muni de dents ac\xE9r\xE9s
+      qui lui permettent de manger plusieurs plats en m\xEAme temps. Cependant, il
+      a \xE9t\xE9 prouv\xE9 suite \xE0 des recherches approfondies que ces derniers
+      n'avait qu'un seul tube digestif et estomac, ce qui faisait que selon eux,
+      tous les plats avaient la m\xEAme saveur. C'est pour cela que leurs meilleurs
+      scientifiques et ing\xE9nieurs travaill\xE8rent main dans la main dans le but
+      de d\xE9velopper une sauce permettant de sublimer ce gloubiboulga de saveurs.
+      D\xE9sormais cette sauce est la seule de la galaxie \xE0 \xEAtre reconnu comme
+      un produit gastronomique et arme de destruction massive."
+    culture: "Tout comme les zebulon, la culture de la competition est tr\xE9s forte
+      chez leurs Viangimite.\nMais il n'ont pas le m\xEAme humour, en effet pour
+      ce moqu\xE9 des competiteur Zebulon, ils aiment taper sur un burger, afin de
+      moquer la celebre competition de degustation de Zeb Burger.\nCette race expose
+      aussi un grand nombre de membre de Claquilipa, ceci est sans doute li\xE9 a
+      leur appetit.\nPuisqu'il adore la f\xEAte et deteste le travail, une de leur
+      blague consiste a casser une horloge a coup de marteau, puis a allumer de la
+      musique"
+    trivia: 
+    tags: Pistolet Laser
+  - title: Crabox
+    author: Stagiaire #2810
+    searchDescription: "Connu pour avoir de multiples pattes et marcher de travers,
+      ils ont popularis\xE9 la vente des octopaires de chaussures"
+    description: "Le Crabox est une esp\xE8ce vivipare originaire du systeme Raav.
+      \nCousin \xE9loign\xE9 du Flagellos claquos, il a d\xE9velopp\xE9 une carapace
+      invisible au dos de leurs coprs jaune arrondi, permettant de prot\xE9ger ses
+      membres flaques des intemp\xE9ries et des tirs de blaster galactique. Certaines
+      sources indiques qu'ils auraient des mains alors que d'autres affirment qu'ils
+      ont des pinces. \nIls sont \xE9galement reconnaissables gr\xE2ce \xE0 leurs
+      2 longue cornes stri\xE9es sur leur t\xEAte et leur carapace ce qui les emp\xEAche
+      de porter des chapeaux."
+    culture: "Les Crabox sont r\xE9put\xE9s de grands marchands, et la culture Crabox
+      repose essentiellement sur le commerce qu'ils effectuent dans toutes les zones
+      connues de la galaxie. \nIl partage la m\xEAme culture et humour que les Flagellos
+      claquos"
+    trivia: ' '
+    tags: "Ventouse \xE0 chiottes"
+  - title: Flagellos_claquos
+    author: Alternant sans imagination #153
+    searchDescription: "Je ne sais pas comment \xE7a s'appelle en vrai, mais ici
+      tout le monde les appelle les Flagellos surement \xE0 cause de leur bras tout
+      flasques"
+    description: "Le Flagellos claquos n'est pas un vivipare mais un ovipare contrairement
+      \xE0 son cousin Crabox. Tr\xE8s grand et fin, ils poss\xE8dent des membres
+      tr\xE8s flasques mais muni de ventouses ce qui d'attraper des objets et de
+      se d\xE9placer. Ils sont munis de 4 cornes comme son cousin mais celle-ci ne
+      sont pas stri\xE9es. Ils sont aussi connu pour avoir un regard tr\xE8s vide
+      et un nez allong\xE9."
+    culture: "Cette race expose souvent 3 cultures:\n- Les adorateurs de Bo-Vay\n   
+      - Pour les faire rire il faut leur donner une grand quantit\xE9 de burgers,
+      Plus pr\xE9cisement il faut lui donner 5 burgers\n- Syntopet\n    - Pour les
+      faire rire il faut faire un bouquant pas possible ! Faite sonner 5 fois un
+      reveille et faite jouer de musique avec des \xE9couteur\n- Claquilipa\n   
+      - Il aime le spectacle ! Pour les faire rire donnez leur un troph\xE9e, un
+      cadeau et flexer 3 fois avec une alterre"
+    trivia: 
+    tags: Spatule
+  cultureArticles:
+  - title: Les_competiteurs
     author: 
-    searchDescription: Osef non?
-    description: ' player test'
-    culture: aaaa
-    trivia: azzz
+    searchDescription: 
+    description: Comme leur nom l'inidique, ils aiment la competition et surtout
+      gagner !
+    culture: 
+    trivia: "Les r\xE9compenses et prix sont tr\xE9s important dans leurs vision
+      de la competition"
     tags: 
-  - title: Blazoid
-    author: Un dev
-    searchDescription: "Un nom invent\xE9 dans le cadre de ce debug"
-    description: dddff  test
+  - title: Les_adorateurs_de_Bo-Vay
+    author: 
+    searchDescription: 
+    description: Leur bonheur vient tout simplement d'un bon burger qu'ils savourent
+      en regardant une bonne horloge le matin. Le croisement entre l'aiguille de
+      16h est le meilleur moment (Et la vitesse?)
     culture: 
     trivia: 
     tags: 
-  cultureArticles: []
+  - title: Claquilipa
+    author: 
+    searchDescription: 
+    description: "Cette culture adore porter des v\xEAtements rouge et des chapeau
+      bleu. \nLeurs attachement au festivit\xE9 les rendent incapable de ne pas d\xE9vor\xE9
+      tout ce qui leurs est propos\xE9.A ce jour, aucune nourriture n'a \xE9t\xE9
+      trouv\xE9 qui ne serrait pas accept\xE9 par les Claquilipa."
+    culture: 
+    trivia: "Notes : Il faut mettre a jour la description, il s'avere que les claquilpa
+      deteste le caf\xE9 et les burger si ils sont present\xE9 ensemble."
+    tags: 
+  - title: Gomusco
+    author: Jokologist8
+    searchDescription: 
+    description: "Cette culture est bas\xE9 sur la force, ils apprecie tout action
+      qui require ou met en avant la force.\nIls exprime souvent un d\xE9gout pour
+      les actes de gentillesse ou d'attention."
+    culture: 
+    trivia: La culture de plante est mal vu par leurs membre, puisque leurs commerce
+      repose sur le commerce de viande.
+    tags: 
+  - title: Syntopet
+    author: Jokologist8
+    searchDescription: 
+    description: 'Tel des oiseaux, les partisans de cette culture adore le bruit
+      !
+
+      En revanche ils ont une peut absolu de l''eau'
+    culture: 
+    trivia: 
+    tags: 
