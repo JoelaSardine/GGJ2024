@@ -96,8 +96,23 @@ public class SearchController : SingletonMono<SearchController>
         }
 
         
+
+
         //layout.enabled = false;
-        DOVirtual.DelayedCall(0.05f, () => LayoutRebuilder.ForceRebuildLayoutImmediate(layout.GetComponent<RectTransform>()));
+        DOVirtual.DelayedCall(0.05f, () =>
+        {
+            float totalSize = 100f;
+            foreach (SearchResultController s in searchResult)
+            {
+                if(s.gameObject.activeSelf)
+                    totalSize += s.GetComponent<RectTransform>().sizeDelta.y;
+          
+            }
+
+            searchResultParent.sizeDelta = new Vector2(searchResultParent.sizeDelta.x, totalSize);
+            searchResultParent.anchoredPosition = new Vector2(searchResultParent.anchoredPosition.x, -totalSize / 2f);
+            LayoutRebuilder.ForceRebuildLayoutImmediate(layout.GetComponent<RectTransform>());
+        });
     }
 
     public void DisplayArticle(ArticleContent article)
