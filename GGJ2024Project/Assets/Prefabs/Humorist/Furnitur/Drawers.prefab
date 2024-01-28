@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 6939411291533350444}
   - component: {fileID: 2800970798327975828}
   m_Layer: 0
-  m_Name: Cube.006 (3)
+  m_Name: Drawer 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -179,7 +179,7 @@ GameObject:
   - component: {fileID: 5094974496451587231}
   - component: {fileID: 612501009870492438}
   m_Layer: 0
-  m_Name: Cube.006 (1)
+  m_Name: Drawer 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -263,7 +263,7 @@ GameObject:
   - component: {fileID: 6249586882010653889}
   - component: {fileID: 3741081888338686038}
   m_Layer: 0
-  m_Name: Cube.006 (2)
+  m_Name: Drawer4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -574,6 +574,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -7.6778016
       objectReference: {fileID: 0}
+    - target: {fileID: -466329591000292508, guid: 471caafbf4c91694290b4d6cb86dc2b4,
+        type: 3}
+      propertyPath: m_Name
+      value: Drawer 1
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 471caafbf4c91694290b4d6cb86dc2b4,
         type: 3}
       propertyPath: m_Name
@@ -589,11 +594,11 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 471caafbf4c91694290b4d6cb86dc2b4,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 751778870606969863}
+      addedObject: {fileID: 6074372631992745512}
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 471caafbf4c91694290b4d6cb86dc2b4,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 6074372631992745512}
+      addedObject: {fileID: 751778870606969863}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 471caafbf4c91694290b4d6cb86dc2b4, type: 3}
 --- !u!4 &3603357784018924931 stripped
