@@ -9,6 +9,10 @@ public class SearchController : SingletonMono<SearchController>
 {
     public int maxSearchResult;
     public ArticlesAssets articles;
+    public ArticleContent openedArticle;
+    public ArticleContent favArticle;
+
+    public Sprite[] favSprites;
 
     [Header("TopBar")]
     public TMP_InputField searchField;
@@ -19,6 +23,7 @@ public class SearchController : SingletonMono<SearchController>
     [Header("Search Result")]
     public RectTransform searchResultParent;
     public List<SearchResultController> searchResult;
+    public Button addToFavButton;
     public SearchResultController resultPrefab;
     public VerticalLayoutGroup layout;
 
@@ -31,8 +36,6 @@ public class SearchController : SingletonMono<SearchController>
     public TextMeshProUGUI cultureBody;
     public TextMeshProUGUI triviaTitle;
     public TextMeshProUGUI triviaBody;
-
-    
 
     // Start is called before the first frame update
     void Start()
@@ -99,8 +102,19 @@ public class SearchController : SingletonMono<SearchController>
 
     public void DisplayArticle(ArticleContent article)
     {
+        openedArticle = article;
+
         articleTitle.text = article.title;
         author.text = "Author : " + ( article.author == "" ? "Unknown" : article.author);
+
+        if(favArticle == article)
+        {
+            addToFavButton.image.sprite = favSprites[1];
+        }
+        else
+        {
+            addToFavButton.image.sprite = favSprites[0];
+        }
 
         if (article.description != "")
         {
@@ -137,5 +151,25 @@ public class SearchController : SingletonMono<SearchController>
             triviaTitle.gameObject.SetActive(false);
             triviaBody.gameObject.SetActive(false);
         }
+    }
+
+    public void FavoriteArticle()
+    {
+        if (openedArticle == null)
+            return;
+        favArticle = openedArticle;
+        favoriteButton.image.sprite = favSprites[1];
+        addToFavButton.image.sprite = favSprites[1];
+    }
+
+    public void OpenFavorite()
+    {
+        DisplayArticle(favArticle);
+    }
+
+    public void ClearFavorite()
+    {
+        favArticle = null;
+        favoriteButton.image.sprite = favSprites[0];
     }
 }
