@@ -34,6 +34,46 @@ public class ArticlesAssets : ScriptableObject
 
         foreach (ArticleContent a in raceArticles)
         {
+            bool isOk = false;
+            foreach (string t in tags)
+            {
+                if (a.title.ToLowerInvariant().Contains(t))
+                {
+                    isOk = true;
+                }
+            }
+
+            if (isOk)
+            {
+                result.Add(a);
+
+                if (result.Count >= 5)
+                    break;
+            }
+        }
+
+        foreach (ArticleContent a in cultureArticles)
+        {
+            bool isOk = false;
+            foreach (string t in tags)
+            {
+                if (a.title.ToLowerInvariant().Contains(t))
+                {
+                    isOk = true;
+                }
+            }
+
+            if (isOk)
+            {
+                result.Add(a);
+
+                if (result.Count >= 5)
+                    break;
+            }
+        }
+
+        foreach (ArticleContent a in raceArticles)
+        {
             bool isOk = true;
             foreach (string t in tags)
             {
