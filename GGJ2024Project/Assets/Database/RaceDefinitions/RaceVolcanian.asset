@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfff5cef05f5444e97ee4d0c2b2e7a1, type: 3}
+  m_Name: RaceVolcanian
+  m_EditorClassIdentifier: 
+  Name: Volcanian
+  Features:
+  - Name: Red Big Body
+    Color: {r: 0.5943396, g: 0, b: 0, a: 1}
+    Sprite: {fileID: -207360425, guid: 9662ef20e7ea76d4f8a38f3d9a1aecaf, type: 3}
+    LaughingOverride: {fileID: 0}
+    HappyOverride: {fileID: 0}
+    SadOverride: {fileID: 0}
+    Slot: 1
+    Traits: 0100000005000000
+  - Name: Three Yellow Eyes
+    Color: {r: 0.8666667, g: 0.8862745, b: 0, a: 1}
+    Sprite: {fileID: 2055751727, guid: 9662ef20e7ea76d4f8a38f3d9a1aecaf, type: 3}
+    LaughingOverride: {fileID: 0}
+    HappyOverride: {fileID: 0}
+    SadOverride: {fileID: 0}
+    Slot: 5
+    Traits: 080000000200000001000000
+  - Name: Mouth
+    Color: {r: 1, g: 1, b: 1, a: 1}
+    Sprite: {fileID: 1869223693, guid: 9662ef20e7ea76d4f8a38f3d9a1aecaf, type: 3}
+    LaughingOverride: {fileID: -2135148278, guid: 9662ef20e7ea76d4f8a38f3d9a1aecaf,
+      type: 3}
+    HappyOverride: {fileID: 1733793749, guid: 9662ef20e7ea76d4f8a38f3d9a1aecaf, type: 3}
+    SadOverride: {fileID: -363493253, guid: 9662ef20e7ea76d4f8a38f3d9a1aecaf, type: 3}
+    Slot: 7
+    Traits: 00000000
