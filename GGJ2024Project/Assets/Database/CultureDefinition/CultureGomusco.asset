@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4b197f5ea70ab242b700d098058baa5, type: 3}
+  m_Name: CultureGomusco
+  m_EditorClassIdentifier: 
+  Name: Gomusco
+  TraitType: 2
+  UsualMood: 0
+  Features: []
+  Reactions:
+  - {fileID: 11400000, guid: 9b3718a223cc25d479456203707e8b1d, type: 2}
+  - {fileID: 11400000, guid: 4e8dba0530f596747b611921c511e33a, type: 2}
+  - {fileID: 11400000, guid: 5f11b756f881545409ea576a0549ba44, type: 2}
+  - {fileID: 11400000, guid: b3dff2755bc6c0640bcea0262b599d88, type: 2}
+  - {fileID: 11400000, guid: 7e5cf1f76e306c148aa9e142c041c0a1, type: 2}

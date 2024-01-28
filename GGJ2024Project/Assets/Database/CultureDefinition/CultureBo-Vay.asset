@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4b197f5ea70ab242b700d098058baa5, type: 3}
+  m_Name: CultureBo-Vay
+  m_EditorClassIdentifier: 
+  Name: Bo-Vay's Followers
+  TraitType: 2
+  UsualMood: 0
+  Features: []
+  Reactions:
+  - {fileID: 11400000, guid: 2ee1eccb85ed2c541922b79a7e0a2a31, type: 2}
+  - {fileID: 11400000, guid: 31b9adb916cdaec4b91ea3d3a12e3efc, type: 2}
+  - {fileID: 11400000, guid: 9b3718a223cc25d479456203707e8b1d, type: 2}
+  - {fileID: 11400000, guid: d145f89cf3eefe248bb5a60b376ec5f6, type: 2}
