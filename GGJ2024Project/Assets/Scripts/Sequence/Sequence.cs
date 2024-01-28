@@ -6,7 +6,7 @@ using UnityEngine;
 public class Sequence : ScriptableObject
 {
     public List<SequencePart> Parts;
-    public Mood NewMood;
+    public MoodType NewMood;
 
     [Serializable]
     public class SequencePart

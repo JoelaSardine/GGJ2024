@@ -7,4 +7,5 @@ public class AlienDefinition : ScriptableObject
 
 	public RaceDefinition Race;
 	public CultureDefinition Culture;
+	public Sequence LaughtingSequence;
 }

@@ -10,10 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 37312c46e908d814e9ce9a3a230bffb4, type: 3}
-  m_Name: Sequence 1
+  m_Name: VolcanianCowboyLaught
   m_EditorClassIdentifier: 
   Parts:
-  - Type: 0
-    Item: {fileID: 11400000, guid: 7ceeaecbb74c6254fbaf4e49cdd095cd, type: 2}
-    Number: 4
-  NewMood: {fileID: 11400000, guid: f0ea53a95759d0647a71791a71f3a393, type: 2}
+  - Type: 1
+    Item: {fileID: 11400000, guid: 08bdf067a0f0424479a90d57e9140021, type: 2}
+    Number: 1
+  - Type: 1
+    Item: {fileID: 11400000, guid: ca329f0cfcbb6ae4a80ec46e6d1fbe5e, type: 2}
+    Number: 2
+  - Type: 1
+    Item: {fileID: 11400000, guid: 256457d4453a7aa4c9776a70d71a44a8, type: 2}
+    Number: 3
+  NewMood: 3

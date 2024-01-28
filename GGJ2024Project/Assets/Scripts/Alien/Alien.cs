@@ -1,20 +1,19 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Transactions;
 using DG.Tweening;
 using UnityEngine;
 
 public class Alien : MonoBehaviour
 {
-    public Mood BaseMood;
+    public MoodType BaseMood;
     public List<Sequence> Sequences;
+    public AlienDefinition AlienDef;
 
     [Header("Reference")]
-    [SerializeField] private SpriteRenderer renderer;
-    [SerializeField] private SequenceVerifier verifier;
-    [SerializeField] private Mood leavingMood;
+    [SerializeField] private AlienRenderer renderer;
     
+    private SequenceVerifier verifier;
     private Transform OutPoint;
 
     public void Init(Transform inPoint, Transform wait, Transform outPoint)
@@ -23,16 +22,20 @@ public class Alien : MonoBehaviour
         transform.position = inPoint.position;
         OutPoint = outPoint;
         SetMood(BaseMood);
+        Sequences.Clear();
+        Sequences.Add(AlienDef.LaughtingSequence);
+        Sequences.AddRange(AlienDef.Race.Reactions);
+        Sequences.AddRange(AlienDef.Culture.Reactions);
         verifier.SetSequences(Sequences);
         verifier.OnSequenceValidated.AddListener(SetMood);
         transform.DOMove(wait.position, 2.0f);
     }
     
-    public void SetMood(Mood mood)
+    public void SetMood(MoodType mood)
     {
-        renderer.sprite = mood.MoodSprite;
+        renderer.Render(AlienDef, mood);
 
-        if (mood == leavingMood)
+        if (mood == MoodType.Laughing)
         {
             Leave();
         }

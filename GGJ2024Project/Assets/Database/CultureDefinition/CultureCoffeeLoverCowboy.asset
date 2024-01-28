@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80f511d7ded53d4429aef8f7fe7ab5b0, type: 3}
+  m_Name: CultureCoffeeLoverCowboy
+  m_EditorClassIdentifier: Assembly-CSharp::AlienDefinition/CultureDefinition
+  Name: Cowboy
+  Features:
+  - Name: Cowboy Hat
+    Color: {r: 0.2627451, g: 0.09803922, b: 0, a: 1}
+    Sprite: {fileID: 162345385, guid: 9662ef20e7ea76d4f8a38f3d9a1aecaf, type: 3}
+    LaughingOverride: {fileID: 0}
+    HappyOverride: {fileID: 0}
+    SadOverride: {fileID: 0}
+    Slot: 1
+    Traits: 0a000000
+  Reactions:
+  - {fileID: 11400000, guid: 31b9adb916cdaec4b91ea3d3a12e3efc, type: 2}

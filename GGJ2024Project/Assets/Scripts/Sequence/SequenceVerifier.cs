@@ -7,7 +7,7 @@ using UnityEngine.Events;
 public class SequenceVerifier : SingletonMono<SequenceVerifier>
 {
     [SerializeField] private float InteractionTimer;
-    public UnityEvent<Mood> OnSequenceValidated;
+    public UnityEvent<MoodType> OnSequenceValidated;
     
     [Header("Reference")]
     [SerializeField] private ItemDetector Detector;
@@ -16,6 +16,7 @@ public class SequenceVerifier : SingletonMono<SequenceVerifier>
     private List<ItemType> RecordedItemsInteraction = new List<ItemType>();
     private List<Sequence> SequencesToVerify = new List<Sequence>();
     private float timer;
+    private int totalItem;
 
     private void OnEnable()
     {
@@ -56,6 +57,7 @@ public class SequenceVerifier : SingletonMono<SequenceVerifier>
             
         for (int i = 0; i < SequencesToVerify.Count; i++)
         {
+            totalItem = 0;
             Sequence sequenceToVerify = SequencesToVerify[i];
             int validParts = 0;
             foreach (var part in sequenceToVerify.Parts)
@@ -63,7 +65,7 @@ public class SequenceVerifier : SingletonMono<SequenceVerifier>
                 if (VerifySequencePart(part)) validParts++;
             }
 
-            if (validParts == sequenceToVerify.Parts.Count)
+            if (validParts == sequenceToVerify.Parts.Count && totalItem == Detector.Items.Count)
             {
                 Debug.Log(sequenceToVerify.name + " Is Validated");
                 OnSequenceValidated.Invoke(sequenceToVerify.NewMood);
@@ -89,6 +91,8 @@ public class SequenceVerifier : SingletonMono<SequenceVerifier>
                 {
                     if (i == part.Item) num++;
                 }
+
+                totalItem += part.Number;
 
                 return num == part.Number;
                 break;
