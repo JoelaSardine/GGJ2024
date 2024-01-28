@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37312c46e908d814e9ce9a3a230bffb4, type: 3}
+  m_Name: BrutusMoisiLaughts
+  m_EditorClassIdentifier: 
+  Parts:
+  - Type: 1
+    Item: {fileID: 11400000, guid: aee87e5c429aded4aa4bb33b4374b542, type: 2}
+    Number: 1
+  - Type: 1
+    Item: {fileID: 11400000, guid: 38c6a29407b1c1a4d8bc127f0576b69e, type: 2}
+    Number: 1
+  - Type: 0
+    Item: {fileID: 11400000, guid: 38c6a29407b1c1a4d8bc127f0576b69e, type: 2}
+    Number: 1
+  - Type: 0
+    Item: {fileID: 11400000, guid: ce375879610e42e4e972145ee67d784b, type: 2}
+    Number: 1
+  NewMood: 3

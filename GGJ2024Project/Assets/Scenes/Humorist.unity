@@ -681,16 +681,7 @@ MonoBehaviour:
   AlienPrefab: {fileID: 6507667185972426563, guid: ff01eda26d0686743be93d9728417b80,
     type: 3}
   Definitions:
-  - {fileID: 11400000, guid: 97d8cab6d184fd7489f4d741c34e22c6, type: 2}
-  - {fileID: 11400000, guid: 5f29969883a89e240a76eb09d80991a0, type: 2}
-  - {fileID: 11400000, guid: 701b2ec708b732b49afe75a864d8ddbd, type: 2}
-  - {fileID: 11400000, guid: 7bea204412c288d4baaf8d15ccdaa3f0, type: 2}
-  - {fileID: 11400000, guid: 9d0128f139ad8af4e941ab180de99b61, type: 2}
   - {fileID: 11400000, guid: 45c6aa2f18b33374eb503d8b7341c15b, type: 2}
-  - {fileID: 11400000, guid: 4aacc6b945b811944845bb506077ead3, type: 2}
-  - {fileID: 11400000, guid: 7e5cc5da1d3eb8a47aa67688e776e2da, type: 2}
-  - {fileID: 11400000, guid: 7027b6c88c29ee444b195c6d599dbc5f, type: 2}
-  - {fileID: 11400000, guid: 6da4b2608da225942bdc3f9d30fc0a27, type: 2}
 --- !u!1001 &377371879
 PrefabInstance:
   m_ObjectHideFlags: 0

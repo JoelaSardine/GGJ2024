@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Volcanian
   TraitType: 1
-  UsualMood: 1
+  UsualMood: 0
   Features:
   - Name: Corps pieuvre rouge
     Slot: 1

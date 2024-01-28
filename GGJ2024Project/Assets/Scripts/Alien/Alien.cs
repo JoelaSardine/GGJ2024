@@ -15,6 +15,8 @@ public class Alien : MonoBehaviour
     
     private SequenceVerifier verifier;
     private Transform OutPoint;
+    private float timer;
+    private MoodType CurrentMood;
 
     public void Init(Transform inPoint, Transform wait, Transform outPoint)
     {
@@ -30,10 +32,21 @@ public class Alien : MonoBehaviour
         verifier.OnSequenceValidated.AddListener(SetMood);
         transform.DOMove(wait.position, 2.0f);
     }
-    
+
+    private void Update()
+    {
+        if (CurrentMood != BaseMood)
+        {
+            timer += Time.deltaTime;
+            if(timer > 4f) SetMood(BaseMood);
+        }
+    }
+
     public void SetMood(MoodType mood)
     {
         renderer.Render(AlienDef, mood);
+        CurrentMood = mood;
+        timer = 0;
 
         if (mood == MoodType.Laughing)
         {
