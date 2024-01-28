@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1021956502161813439}
   - component: {fileID: 7993887009781414024}
   - component: {fileID: 3689581771150375516}
-  - component: {fileID: 485647335743488202}
+  - component: {fileID: 2783484773781304033}
   m_Layer: 8
   m_Name: Hammer
   m_TagString: Untagged
@@ -80,10 +80,10 @@ MonoBehaviour:
   OnInteract:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 485647335743488202}
-        m_TargetAssemblyTypeName: ScaleInteraction, Assembly-CSharp
+      - m_Target: {fileID: 2783484773781304033}
+        m_TargetAssemblyTypeName: AnimInteraction, Assembly-CSharp
         m_MethodName: Interact
-        m_Mode: 1
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -106,7 +106,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: {fileID: 11400000, guid: 24f353aca80725142b61fd1d87308559, type: 2}
---- !u!114 &485647335743488202
+--- !u!114 &2783484773781304033
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -115,10 +115,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 621149867364432100}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f0be17d7b50086b45bdef11444c3e56c, type: 3}
+  m_Script: {fileID: 11500000, guid: 5f409434cc6a2a54f9d4a45e4c98bc74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scale: 0.1
+  animationID: 2
+  loop: 1
+  destroy: 0
 --- !u!1001 &271123453918180898
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4776446754980335284}
   - component: {fileID: 559228561358724343}
   - component: {fileID: 7783337308888401169}
-  - component: {fileID: 8556556845339621529}
+  - component: {fileID: 8491787641240442804}
   m_Layer: 8
   m_Name: Coffee
   m_TagString: Untagged
@@ -80,10 +80,10 @@ MonoBehaviour:
   OnInteract:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8556556845339621529}
-        m_TargetAssemblyTypeName: ScaleInteraction, Assembly-CSharp
+      - m_Target: {fileID: 8491787641240442804}
+        m_TargetAssemblyTypeName: AnimInteraction, Assembly-CSharp
         m_MethodName: Interact
-        m_Mode: 1
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -92,6 +92,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  CanGrab: 1
 --- !u!114 &7783337308888401169
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -105,7 +106,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: {fileID: 11400000, guid: 08bdf067a0f0424479a90d57e9140021, type: 2}
---- !u!114 &8556556845339621529
+--- !u!114 &8491787641240442804
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -114,10 +115,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 5945094006478287041}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f0be17d7b50086b45bdef11444c3e56c, type: 3}
+  m_Script: {fileID: 11500000, guid: 5f409434cc6a2a54f9d4a45e4c98bc74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scale: 0.1
+  animationID: 0
+  loop: 0
+  destroy: 1
 --- !u!1001 &9168039300031617842
 PrefabInstance:
   m_ObjectHideFlags: 0

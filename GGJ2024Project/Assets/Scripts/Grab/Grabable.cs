@@ -1,13 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Animations;
 using UnityEngine.Events;
 
 [RequireComponent(typeof(Rigidbody))]
 public class Grabable : MonoBehaviour
 {
     [SerializeField] private float Speed, AngularSpeed;
-    [SerializeField] private UnityEvent OnInteract;
+    [SerializeField] private UnityEvent<Grabber> OnInteract;
     public bool CanGrab = true;
 
     [System.NonSerialized]
@@ -29,6 +30,14 @@ public class Grabable : MonoBehaviour
         
         (target.rotation * Quaternion.Inverse(transform.rotation)).ToAngleAxis(out angle, out axis);
 
+        Debug.Log(axis + " : " + angle);
+        
+        if (angle > 180)
+        {
+            axis *= -1;
+            angle = 360 -angle;
+        }
+
         rb.angularVelocity = axis * AngularSpeed * angle;
         
         Vector3 direction = target.position - transform.position;
@@ -47,9 +56,9 @@ public class Grabable : MonoBehaviour
         gameObject.layer = initialLayer;
     }
 
-    public void Interact()
+    public void Interact(Grabber grabber)
     {
-        OnInteract.Invoke();
+        OnInteract.Invoke(grabber);
     }
 
     public void OnDrawGizmos()
