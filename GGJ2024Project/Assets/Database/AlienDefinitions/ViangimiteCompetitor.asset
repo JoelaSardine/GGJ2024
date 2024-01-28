@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: ViangimiteCompetitor
   m_EditorClassIdentifier: 
   Name: Volcanian
-  Race: {fileID: 11400000, guid: 047796eefa8fbd5478eee26e7cdec42b, type: 2}
+  Race: {fileID: 11400000, guid: cc1fe6153be09a642895a13d0e2c272c, type: 2}
   Culture: {fileID: 11400000, guid: ac2bd0f77e625ef4095530a3be31f639, type: 2}
-  LaughingSequence: {fileID: 11400000, guid: 342104fd153879e40a5e31e710142408, type: 2}
+  LaughingSequence: {fileID: 11400000, guid: 277a78a71d7b3c94581d95c83f93d5e2, type: 2}

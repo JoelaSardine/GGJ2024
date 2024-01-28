@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: ViangimiteClaquilipa
   m_EditorClassIdentifier: 
   Name: Volcanian
-  Race: {fileID: 11400000, guid: 047796eefa8fbd5478eee26e7cdec42b, type: 2}
-  Culture: {fileID: 11400000, guid: ac2bd0f77e625ef4095530a3be31f639, type: 2}
-  LaughingSequence: {fileID: 11400000, guid: 342104fd153879e40a5e31e710142408, type: 2}
+  Race: {fileID: 11400000, guid: cc1fe6153be09a642895a13d0e2c272c, type: 2}
+  Culture: {fileID: 11400000, guid: e17b0e3c8d2ed8340b83553a71285f2b, type: 2}
+  LaughingSequence: {fileID: 11400000, guid: 82f4212bd8f44c944839619611492c72, type: 2}
