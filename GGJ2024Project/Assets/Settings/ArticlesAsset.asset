@@ -98,9 +98,9 @@ MonoBehaviour:
       repose essentiellement sur le commerce qu'ils effectuent dans toutes les zones
       connues de la galaxie. \nIl partage la m\xEAme culture et humour que les Flagellos
       claquos"
-    trivia: ' '
+    trivia: 
     tags: "Ventouse \xE0 chiottes"
-  - title: Flagellos_claquos
+  - title: Flagellos claquos
     author: Alternant sans imagination #153
     searchDescription: "Je ne sais pas comment \xE7a s'appelle en vrai, mais ici
       tout le monde les appelle les Flagellos surement \xE0 cause de leur bras tout
@@ -121,18 +121,21 @@ MonoBehaviour:
     trivia: 
     tags: Spatule
   cultureArticles:
-  - title: Les_competiteurs
+  - title: Les competiteurs
     author: 
-    searchDescription: 
+    searchDescription: 'Sont connus pour leurs slogan novateur : "Gagner c''est mieux
+      que perdre"'
     description: Comme leur nom l'inidique, ils aiment la competition et surtout
       gagner !
     culture: 
     trivia: "Les r\xE9compenses et prix sont tr\xE9s important dans leurs vision
       de la competition"
-    tags: 
-  - title: Les_adorateurs_de_Bo-Vay
+    tags: ' '
+  - title: Les adorateurs de Bo-Vay
     author: 
-    searchDescription: 
+    searchDescription: "Culture n\xE9e dans l'un des derniers bastions d'une lointaine
+      galaxie, il pense toujours qu'il manque de temps mais passe la majorit\xE9
+      de celui-ci \xE0 manger des burgers et boire du caf\xE9."
     description: Leur bonheur vient tout simplement d'un bon burger qu'ils savourent
       en regardant une bonne horloge le matin. Le croisement entre l'aiguille de
       16h est le meilleur moment (Et la vitesse?)
@@ -141,7 +144,7 @@ MonoBehaviour:
     tags: 
   - title: Claquilipa
     author: 
-    searchDescription: 
+    searchDescription: Une culture festive qui adore montrer leur bonne humeur
     description: "Cette culture adore porter des v\xEAtements rouge et des chapeau
       bleu. \nLeurs attachement au festivit\xE9 les rendent incapable de ne pas d\xE9vor\xE9
       tout ce qui leurs est propos\xE9.A ce jour, aucune nourriture n'a \xE9t\xE9
@@ -152,7 +155,8 @@ MonoBehaviour:
     tags: 
   - title: Gomusco
     author: Jokologist8
-    searchDescription: 
+    searchDescription: "Cette culture est bas\xE9 sur la force, ils apprecie tout
+      action qui require ou met en avant la force."
     description: "Cette culture est bas\xE9 sur la force, ils apprecie tout action
       qui require ou met en avant la force.\nIls exprime souvent un d\xE9gout pour
       les actes de gentillesse ou d'attention."
@@ -162,7 +166,8 @@ MonoBehaviour:
     tags: 
   - title: Syntopet
     author: Jokologist8
-    searchDescription: 
+    searchDescription: "Si vous rencontrez un jour un syntopet, parlez lui fort,
+      il adorera \xE7a."
     description: 'Tel des oiseaux, les partisans de cette culture adore le bruit
       !
 

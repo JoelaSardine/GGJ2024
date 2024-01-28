@@ -195,7 +195,7 @@ public class ArticlesAssets : ScriptableObject
         foreach (XmlNode node in root.ChildNodes)
         {
             ArticleContent newArticle = new ArticleContent();
-            newArticle.title = node.Name;
+            newArticle.title = node.Attributes["Title"].Value; ;
             newArticle.author = node.Attributes["Author"].Value;
             newArticle.searchDescription = node.Attributes["Summary"].Value;
             newArticle.description = node.Attributes["Description"].Value;
@@ -224,7 +224,8 @@ public class ArticlesAssets : ScriptableObject
         foreach (XmlNode node in root.ChildNodes)
         {
             ArticleContent newArticle = new ArticleContent();
-            newArticle.title = node.Name;
+            newArticle.title = node.Attributes["Title"].Value;
+            newArticle.searchDescription = node.Attributes["Summary"].Value;
             newArticle.author = node.Attributes["Author"].Value;
             newArticle.description = node.Attributes["Description"].Value;
             newArticle.culture = node.Attributes["Culture"].Value;
