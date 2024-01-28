@@ -2973,7 +2973,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed49e6ce5790e2845a2420036ad9b85a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxSearchResult: 3
+  maxSearchResult: 5
   articles: {fileID: 11400000, guid: 9768741175068f34c8210a78f4218801, type: 2}
   openedArticle:
     title: 

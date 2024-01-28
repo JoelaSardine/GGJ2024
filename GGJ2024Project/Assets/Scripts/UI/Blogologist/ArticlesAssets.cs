@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Xml;
 using UnityEngine;
+using System.Linq;
 
 [Serializable]
 public class ArticleContent
@@ -35,11 +36,13 @@ public class ArticlesAssets : ScriptableObject
         foreach (ArticleContent a in raceArticles)
         {
             bool isOk = false;
+            int occurences = 0;
             foreach (string t in tags)
             {
                 if (a.title.ToLowerInvariant().Contains(t))
                 {
                     isOk = true;
+                    occurences++;
                 }
             }
 
@@ -129,6 +132,50 @@ public class ArticlesAssets : ScriptableObject
         }
 
         return result;
+    }
+
+    public List<KeyValuePair<ArticleContent, int>> GetArticlesRankedByTags(List<string> tags)
+    {
+        Dictionary<ArticleContent, int> result = new Dictionary<ArticleContent, int>();
+
+        foreach (ArticleContent a in raceArticles)
+        {
+            int occurences = 0;
+            foreach (string t in tags)
+            {
+                if (a.title.ToLowerInvariant().Contains(t) || a.description.ToLowerInvariant().Contains(t) || a.culture.ToLowerInvariant().Contains(t)
+                    || a.trivia.ToLowerInvariant().Contains(t) || a.tags.ToLowerInvariant().Contains(t))
+                {
+                    occurences++;
+                }
+            }
+
+            if(occurences > 0)
+            result.Add(a, occurences);
+        }
+
+        foreach (ArticleContent a in cultureArticles)
+        {
+            int occurences = 0;
+            foreach (string t in tags)
+            {
+                if (a.title.ToLowerInvariant().Contains(t) || a.description.ToLowerInvariant().Contains(t) || a.culture.ToLowerInvariant().Contains(t)
+                    || a.trivia.ToLowerInvariant().Contains(t) || a.tags.ToLowerInvariant().Contains(t))
+                {
+                    occurences++;
+                }
+            }
+
+            if (occurences > 0)
+                result.Add(a, occurences);
+        }
+
+        List<KeyValuePair<ArticleContent, int>> resultSorted = result.ToList();
+        resultSorted.Sort((pair1, pair2) => pair1.Value.CompareTo(pair2.Value));
+        if(resultSorted.Count > 5)
+            resultSorted.RemoveRange(5, resultSorted.Count - 5);
+
+        return resultSorted;
     }
 
     public void UpdateRacesArticles()
