@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4656ecaccfa4c0d4d95ef87c17ca77b4, type: 3}
-  m_Name: ZebulonCompetition
+  m_Name: CrabosClaquosSyntopet
   m_EditorClassIdentifier: 
   Name: Volcanian
-  Race: {fileID: 11400000, guid: 047796eefa8fbd5478eee26e7cdec42b, type: 2}
-  Culture: {fileID: 11400000, guid: ac2bd0f77e625ef4095530a3be31f639, type: 2}
+  Race: {fileID: 11400000, guid: a7593b0f7b3c74f42b8b4ba0d27d46f4, type: 2}
+  Culture: {fileID: 11400000, guid: 04d5e94064855694c9f9c3d09ba59e79, type: 2}
   LaughingSequence: {fileID: 11400000, guid: 342104fd153879e40a5e31e710142408, type: 2}
