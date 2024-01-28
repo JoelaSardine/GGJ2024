@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4656ecaccfa4c0d4d95ef87c17ca77b4, type: 3}
-  m_Name: NeptunianNaturist
+  m_Name: Neptunian
   m_EditorClassIdentifier: 
-  Name: NeptunianNaturist
-  Race: {fileID: 11400000, guid: d5f19cbe0699a324e9bc63121b2baa07, type: 2}
-  Culture: {fileID: 11400000, guid: 90972d374445c7b408458d916594404b, type: 2}
-  LaughtingSequence: {fileID: 11400000, guid: 5a49e770d9faa2745b36d3f7fd01781c, type: 2}
+  Name: Neptunian
+  Race: {fileID: 11400000, guid: 3b9fc8add94093342b554346ecb6d73f, type: 2}
+  Culture: {fileID: 11400000, guid: cca27a328ed604348ab2b62a220fb0b6, type: 2}
+  LaughingSequence: {fileID: 11400000, guid: 5a49e770d9faa2745b36d3f7fd01781c, type: 2}

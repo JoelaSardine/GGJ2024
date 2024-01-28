@@ -654,27 +654,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 737254408905872219, guid: ff01eda26d0686743be93d9728417b80,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 2055751727, guid: 9662ef20e7ea76d4f8a38f3d9a1aecaf,
-        type: 3}
-    - target: {fileID: 737254408905872219, guid: ff01eda26d0686743be93d9728417b80,
-        type: 3}
-      propertyPath: m_Color.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 737254408905872219, guid: ff01eda26d0686743be93d9728417b80,
-        type: 3}
-      propertyPath: m_Color.g
-      value: 0.8862745
-      objectReference: {fileID: 0}
-    - target: {fileID: 737254408905872219, guid: ff01eda26d0686743be93d9728417b80,
-        type: 3}
-      propertyPath: m_Color.r
-      value: 0.8666667
-      objectReference: {fileID: 0}
     - target: {fileID: 1195403274184138708, guid: ff01eda26d0686743be93d9728417b80,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -727,60 +706,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2496766819405328059, guid: ff01eda26d0686743be93d9728417b80,
         type: 3}
-      propertyPath: debugMood
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2496766819405328059, guid: ff01eda26d0686743be93d9728417b80,
-        type: 3}
       propertyPath: debugDefinition
       value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4472329529129720767, guid: ff01eda26d0686743be93d9728417b80,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: -2135148278, guid: 9662ef20e7ea76d4f8a38f3d9a1aecaf,
-        type: 3}
-    - target: {fileID: 4472329529129720767, guid: ff01eda26d0686743be93d9728417b80,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4510473743491082702, guid: ff01eda26d0686743be93d9728417b80,
-        type: 3}
-      propertyPath: m_Color.g
-      value: 0.09803922
-      objectReference: {fileID: 0}
-    - target: {fileID: 4510473743491082702, guid: ff01eda26d0686743be93d9728417b80,
-        type: 3}
-      propertyPath: m_Color.r
-      value: 0.2627451
       objectReference: {fileID: 0}
     - target: {fileID: 6507667185972426563, guid: ff01eda26d0686743be93d9728417b80,
         type: 3}
       propertyPath: m_Name
       value: Alien
-      objectReference: {fileID: 0}
-    - target: {fileID: 6609505854886309250, guid: ff01eda26d0686743be93d9728417b80,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: -207360425, guid: 9662ef20e7ea76d4f8a38f3d9a1aecaf,
-        type: 3}
-    - target: {fileID: 6609505854886309250, guid: ff01eda26d0686743be93d9728417b80,
-        type: 3}
-      propertyPath: m_Color.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6609505854886309250, guid: ff01eda26d0686743be93d9728417b80,
-        type: 3}
-      propertyPath: m_Color.g
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6609505854886309250, guid: ff01eda26d0686743be93d9728417b80,
-        type: 3}
-      propertyPath: m_Color.r
-      value: 0.5943396
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

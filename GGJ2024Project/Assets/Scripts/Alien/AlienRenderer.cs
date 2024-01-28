@@ -3,20 +3,14 @@ using UnityEngine;
 
 public class AlienRenderer : MonoBehaviour
 {
-	[Header("Race slots")]
-	[SerializeField] private SpriteRenderer Body;
-	[SerializeField] private SpriteRenderer Eyes;
-	[SerializeField] private SpriteRenderer Mouth;
+	public SpriteRenderer Body, Arm, Horn, Head, Cloth1, Cloth2, Ear, Mouth, Eye, Nose;
 
-	[Header("Culture slots")]
-	[SerializeField] private SpriteRenderer Hat;
-
-	[Header("Debug")]
+	[Header("Debug (Play Mode Only)")]
 	[SerializeField] private MoodType debugMood;
 	[SerializeField] private AlienDefinition debugDefinition = null;
 
 	[System.NonSerialized]
-	private List<SpriteRenderer> allRenderers = new ();
+	private Dictionary<AlienTraitSlot, SpriteRenderer> SlotRenderers = new ();
 
 	private string lastAlien;
 	private MoodType lastMood;
@@ -31,11 +25,7 @@ public class AlienRenderer : MonoBehaviour
 		this.lastAlien = alienDefinition.Name;
 		this.lastMood = mood;
 
-		// Hide everything by default
-		foreach (var spriteRenderer in allRenderers)
-		{
-			spriteRenderer.enabled = false;
-		}
+		this.HideAndUnbindAll();
 
 		foreach (var racialFeature in alienDefinition.Race.Features)
 		{
@@ -48,62 +38,48 @@ public class AlienRenderer : MonoBehaviour
 		}
 	}
 
-	private void Render(RacialFeature racialFeature, MoodType mood)
+	private void HideAndUnbindAll()
 	{
-		switch (racialFeature.Slot)
+		foreach (var spriteRenderer in this.SlotRenderers.Values)
 		{
-			case RacialSlot.Body:
-				racialFeature.ApplyTo(this.Body, mood);
-				break;
-
-			case RacialSlot.Eye:
-				racialFeature.ApplyTo(this.Eyes, mood);
-				break;
-
-
-			case RacialSlot.Mouth:
-				racialFeature.ApplyTo(this.Mouth, mood);
-				break;
-
-			case RacialSlot.Invalid:
-				Debug.LogWarning($"Racial feature {racialFeature.Name} has invalid slot.");
-				break;
-
-			default:
-				Debug.LogError($"Racial Slot {racialFeature.Slot} has no Renderer. Please add it.");
-				break;
-
+			spriteRenderer.sprite = null;
+			spriteRenderer.color = Color.white;
+			spriteRenderer.enabled = false;
 		}
 	}
 
-	private void Render(CulturalFeature culturalFeature, MoodType mood)
+	private void Render(AlienFeature feature, MoodType mood)
 	{
-		switch (culturalFeature.Slot)
+		if (!this.SlotRenderers.TryGetValue(feature.Slot, out SpriteRenderer renderer))
 		{
-			case CulturalSlot.Hat:
-				culturalFeature.ApplyTo(this.Hat, mood);
-				break;
-
-			case CulturalSlot.Invalid:
-				Debug.LogWarning($"Cultural feature {culturalFeature.Name} has invalid slot.");
-				break;
-
-			default:
-				Debug.LogError($"Cultural Slot {culturalFeature.Slot} has no Renderer. Please add it.");
-				break;
-
+			Debug.LogError($"Alien Trait Slot {feature.Slot} has no Renderer. Please add it.");
+			return;
 		}
-	}
 
+		renderer.color = feature.GetColorFor(mood);
+
+		// If no sprite is set, keep the old one to allow Culture to override Race color.
+		Sprite newSprite = feature.GetSpriteFor(mood);
+		if (newSprite != null)
+		{
+			renderer.sprite = newSprite;
+		}
+		
+		renderer.enabled = renderer.sprite != null;
+	}
+	
 	private void Start()
 	{
-		// Race slots
-		this.allRenderers.Add(this.Body);
-		this.allRenderers.Add(this.Eyes);
-		this.allRenderers.Add(this.Mouth);
-
-		// Culture slots
-		this.allRenderers.Add(this.Hat);
+		this.SlotRenderers.Add(AlienTraitSlot.Body, this.Body);
+		this.SlotRenderers.Add(AlienTraitSlot.Arm, this.Arm);
+		this.SlotRenderers.Add(AlienTraitSlot.Horn, this.Horn);
+		this.SlotRenderers.Add(AlienTraitSlot.Head, this.Head);
+		this.SlotRenderers.Add(AlienTraitSlot.Cloth2, this.Cloth2);
+		this.SlotRenderers.Add(AlienTraitSlot.Cloth1, this.Cloth1);
+		this.SlotRenderers.Add(AlienTraitSlot.Ear, this.Ear);
+		this.SlotRenderers.Add(AlienTraitSlot.Mouth, this.Mouth);
+		this.SlotRenderers.Add(AlienTraitSlot.Eye, this.Eye);
+		this.SlotRenderers.Add(AlienTraitSlot.Nose, this.Nose);
 	}
 
 	private void OnValidate()

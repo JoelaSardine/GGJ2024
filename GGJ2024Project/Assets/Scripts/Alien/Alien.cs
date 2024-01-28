@@ -23,7 +23,7 @@ public class Alien : MonoBehaviour
         OutPoint = outPoint;
         SetMood(BaseMood);
         Sequences.Clear();
-        Sequences.Add(AlienDef.LaughtingSequence);
+        Sequences.Add(AlienDef.LaughingSequence);
         Sequences.AddRange(AlienDef.Race.Reactions);
         Sequences.AddRange(AlienDef.Culture.Reactions);
         verifier.SetSequences(Sequences);

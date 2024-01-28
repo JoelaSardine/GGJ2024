@@ -5,7 +5,9 @@ public class AlienDefinition : ScriptableObject
 {
 	public string Name;
 
-	public RaceDefinition Race;
-	public CultureDefinition Culture;
-	public Sequence LaughtingSequence;
+	public AlienTraitDefinition Race;
+	public AlienTraitDefinition Culture;
+
+	[UnityEngine.Serialization.FormerlySerializedAsAttribute("LaughtingSequence")]
+	public Sequence LaughingSequence;
 }

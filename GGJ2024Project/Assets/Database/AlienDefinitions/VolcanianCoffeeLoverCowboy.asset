@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4656ecaccfa4c0d4d95ef87c17ca77b4, type: 3}
   m_Name: VolcanianCoffeeLoverCowboy
   m_EditorClassIdentifier: 
-  Name: VolcanianCowboy
-  Race: {fileID: 11400000, guid: 85a7d177155aeee42bb1c06485a34de8, type: 2}
-  Culture: {fileID: 11400000, guid: 9315cd3639df2a24293a1b461f534990, type: 2}
-  LaughtingSequence: {fileID: 11400000, guid: 7242aea1d64b62d4a86f95805cfcbf17, type: 2}
+  Name: VolcanianCoffeeLover
+  Race: {fileID: 11400000, guid: 8d9ec046c99531642b339b52c2a2bbaa, type: 2}
+  Culture: {fileID: 11400000, guid: 890974b52da658745986619d4ef8959e, type: 2}
+  LaughingSequence: {fileID: 11400000, guid: 7242aea1d64b62d4a86f95805cfcbf17, type: 2}
