@@ -8,12 +8,8 @@ public class CultureDefinition : ScriptableObject
 }
 
 [System.Serializable]
-public class CulturalFeature
+public class CulturalFeature : AbstractFeature
 {
-	// Ex : Red Face Painting
-	public string Name;
 	public CulturalSlot Slot;
 	public CulturalTrait[] Traits;
-
-	public Texture Texture;
 }

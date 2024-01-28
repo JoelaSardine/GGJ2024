@@ -9,12 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7bfff5cef05f5444e97ee4d0c2b2e7a1, type: 3}
-  m_Name: RaceExample
-  m_EditorClassIdentifier: 
-  Name: Example
-  Features:
-  - Name: Grosses Cornes Jaunes
-    Slot: 2
-    Traits: 0400000003000000
-    Texture: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: 80f511d7ded53d4429aef8f7fe7ab5b0, type: 3}
+  m_Name: CultureNaturist
+  m_EditorClassIdentifier: Assembly-CSharp::AlienDefinition/CultureDefinition
+  Name: Naturist
+  Features: []
