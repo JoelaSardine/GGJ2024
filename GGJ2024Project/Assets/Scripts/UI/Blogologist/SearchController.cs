@@ -78,7 +78,7 @@ public class SearchController : SingletonMono<SearchController>
     
     public void DisplayResult(List<ArticleContent> articles)
     {
-        
+
         for (int i =0; i < maxSearchResult; i++)
         {
             if( i < articles.Count)
@@ -94,9 +94,6 @@ public class SearchController : SingletonMono<SearchController>
             }
             
         }
-
-        
-
 
         //layout.enabled = false;
         DOVirtual.DelayedCall(0.05f, () =>

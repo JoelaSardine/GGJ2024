@@ -24,14 +24,22 @@ public class StockSpawner : MonoBehaviour
     {
         for (int i = 0; i < Objects.Length; i++)
         {
-            float distance = Vector3.Distance(BasePosition[i], Objects[i].position);
-
-            if (distance > MaxDistance)
+            if (Objects[i] == null)
             {
-                string name = Objects[i].name;
-
                 Objects[i] = Instantiate(Prefab, BasePosition[i], Quaternion.identity).transform;
-                Objects[i].name = name;
+                Objects[i].name = Prefab.name;
+            }
+            else
+            {
+                float distance = Vector3.Distance(BasePosition[i], Objects[i].position);
+
+                if (distance > MaxDistance)
+                {
+                    string name = Objects[i].name;
+
+                    Objects[i] = Instantiate(Prefab, BasePosition[i], Quaternion.identity).transform;
+                    Objects[i].name = Prefab.name;
+                }
             }
         }
     }
