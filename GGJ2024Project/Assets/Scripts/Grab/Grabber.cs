@@ -18,7 +18,26 @@ public class Grabber : MonoBehaviour
     
     public void OnGrab()
     {
-        grab = !grab;
+	    if (_currentGrabable)
+	    {
+		    _currentGrabable.StopGrab();
+		    _currentGrabable = null;
+	    }
+	    else if (_hoveringGrabable)
+	    {
+		    if (_hoveringGrabable.CanGrab)
+		    {
+			    _currentGrabable = _hoveringGrabable;
+			    _hoveringGrabable = null;
+			    _currentGrabable.StartGrab();
+		    }
+		    else
+		    {
+			    _hoveringGrabable.Interact();
+			    OnInteractWith.Invoke(_hoveringGrabable);
+		    }
+		    
+	    }
     }
 
     public void OnInteract()
@@ -27,6 +46,11 @@ public class Grabber : MonoBehaviour
 	    {
 		    _currentGrabable.Interact();
 		    OnInteractWith.Invoke(_currentGrabable);
+	    }
+	    else if (_hoveringGrabable)
+	    {
+		    _hoveringGrabable.Interact();
+		    OnInteractWith.Invoke(_hoveringGrabable);
 	    }
     }
     
@@ -40,11 +64,6 @@ public class Grabber : MonoBehaviour
 		    GrabPointer.transform.localEulerAngles = Vector3.forward * 45f;
 
 		    _currentGrabable.FollowTarget(Target);
-		    if (!grab)
-		    {
-			    _currentGrabable.StopGrab();
-			    _currentGrabable = null;
-		    }
 	    }
 	    else
 	    {
@@ -54,15 +73,7 @@ public class Grabber : MonoBehaviour
 		    if (Physics.SphereCast(ray, GrabRadius, out RaycastHit hit, GrabDistance, Mask))
 		    {
 			    _hoveringGrabable = hit.rigidbody?.GetComponent<Grabable>();
-
-			    if (grab && _hoveringGrabable)
-			    {
-				    _currentGrabable = _hoveringGrabable;
-				    _hoveringGrabable = null;
-
-				    _currentGrabable.StartGrab();
-			    }
-            }
+		    }
 	    }
         
 	    // Refresh hoovering

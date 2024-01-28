@@ -8,6 +8,7 @@ public class Grabable : MonoBehaviour
 {
     [SerializeField] private float Speed, AngularSpeed;
     [SerializeField] private UnityEvent OnInteract;
+    public bool CanGrab = true;
 
     [System.NonSerialized]
     public bool Hoovered = false;

@@ -25,7 +25,7 @@ public class Alien : MonoBehaviour
         SetMood(BaseMood);
         verifier.SetSequences(Sequences);
         verifier.OnSequenceValidated.AddListener(SetMood);
-        transform.DOMove(wait.position, 5.0f);
+        transform.DOMove(wait.position, 2.0f);
     }
     
     public void SetMood(Mood mood)
@@ -40,7 +40,7 @@ public class Alien : MonoBehaviour
 
     private void Leave()
     {
-        transform.DOMove(OutPoint.position, 5.0f).SetDelay(2.0f).onComplete = () => {Destroy(gameObject);};
+        transform.DOMove(OutPoint.position, 2.0f).SetDelay(2.0f).onComplete = () => {Destroy(gameObject);};
         verifier.OnSequenceValidated.RemoveListener(SetMood);
     }
 }
