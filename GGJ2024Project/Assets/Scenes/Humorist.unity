@@ -1775,7 +1775,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5317fb76924bb64fbe0d2b51c50f078, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InteractionTimer: 2
+  InteractionTimer: 4
   OnSequenceValidated:
     m_PersistentCalls:
       m_Calls: []
