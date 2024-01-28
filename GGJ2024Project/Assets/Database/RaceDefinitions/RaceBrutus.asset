@@ -1,0 +1,87 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4b197f5ea70ab242b700d098058baa5, type: 3}
+  m_Name: RaceBrutus
+  m_EditorClassIdentifier: 
+  Name: Brutus Sardinus
+  TraitType: 1
+  UsualMood: 0
+  Features:
+  - Name: Corps poire violet
+    Slot: 1
+    Color: {r: 0.41960785, g: 0.05490196, b: 0.59607846, a: 1}
+    Sprite: {fileID: 21300000, guid: 1067ab43bc3e91542abee75cf7c401e0, type: 3}
+    ColorOverrides: []
+    TextureOverrides: []
+  - Name: 6 Bras
+    Slot: 2
+    Color: {r: 0.5921569, g: 0.2509804, b: 0.75686276, a: 1}
+    Sprite: {fileID: 21300000, guid: a0208c1eda9f2db43ada3fb9acfc1e65, type: 3}
+    ColorOverrides: []
+    TextureOverrides: []
+  - Name: Tete ronde
+    Slot: 4
+    Color: {r: 0.5921569, g: 0.24705882, b: 0.7647059, a: 1}
+    Sprite: {fileID: 21300000, guid: 80e767ca8c96af143bcaab4cf9d0c5cf, type: 3}
+    ColorOverrides: []
+    TextureOverrides: []
+  - Name: Cornes
+    Slot: 3
+    Color: {r: 0.41568628, g: 0.18039216, b: 0.6039216, a: 1}
+    Sprite: {fileID: 21300000, guid: 78d85e30354073e45925081277078500, type: 3}
+    ColorOverrides: []
+    TextureOverrides: []
+  - Name: Oreilles
+    Slot: 7
+    Color: {r: 0.5921569, g: 0.2509804, b: 0.75686276, a: 1}
+    Sprite: {fileID: 21300000, guid: 71fde987ad7c1134b9c7770144c3df62, type: 3}
+    ColorOverrides: []
+    TextureOverrides: []
+  - Name: Nez
+    Slot: 10
+    Color: {r: 0.69803923, g: 0.49411765, b: 0.7019608, a: 1}
+    Sprite: {fileID: 21300000, guid: ddbe992abda9c3d4180714f5bf1ce58f, type: 3}
+    ColorOverrides: []
+    TextureOverrides: []
+  - Name: Bouche
+    Slot: 8
+    Color: {r: 1, g: 1, b: 1, a: 1}
+    Sprite: {fileID: 21300000, guid: 74960657870ff5a4d804479020066196, type: 3}
+    ColorOverrides: []
+    TextureOverrides: []
+  - Name: Yeux
+    Slot: 9
+    Color: {r: 0.64705884, g: 0.6745098, b: 0.93333334, a: 1}
+    Sprite: {fileID: 21300000, guid: 5c565ba110b343d40b029a2364aafb85, type: 3}
+    ColorOverrides:
+    - Mood: 1
+      Value: {r: 1, g: 0, b: 0.5921569, a: 1}
+    TextureOverrides:
+    - Mood: 2
+      Value: {fileID: 21300000, guid: ece20c08e2eb6c246a4eac493242ba45, type: 3}
+    - Mood: 3
+      Value: {fileID: 21300000, guid: 682994039fad8ca43b9371ed707d058d, type: 3}
+    - Mood: 1
+      Value: {fileID: 21300000, guid: 5935672626259184baeb4e383321f8ee, type: 3}
+  - Name: Couronne
+    Slot: 6
+    Color: {r: 0.8, g: 0.57254905, b: 0, a: 1}
+    Sprite: {fileID: 21300000, guid: f0645e89a6ce0194e95b5bc6c6790968, type: 3}
+    ColorOverrides: []
+    TextureOverrides: []
+  - Name: Cape
+    Slot: 5
+    Color: {r: 0.57254905, g: 0.40392157, b: 0, a: 1}
+    Sprite: {fileID: 21300000, guid: 0ed38214a5efc7e4aa95e630e2675eec, type: 3}
+    ColorOverrides: []
+    TextureOverrides: []
+  Reactions: []
