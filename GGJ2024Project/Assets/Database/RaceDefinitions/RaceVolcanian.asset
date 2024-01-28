@@ -58,4 +58,17 @@ MonoBehaviour:
       Value: {fileID: 21300000, guid: 59a2e79cec504c141993f4456fd8658c, type: 3}
     - Mood: 3
       Value: {fileID: 21300000, guid: 900b6682f42ae674fbc92ab6be31be6a, type: 3}
-  Reactions: []
+  - Name: Collier poussin
+    Slot: 5
+    Color: {r: 0.28235295, g: 0.28235295, b: 0.28235295, a: 1}
+    Sprite: {fileID: 21300000, guid: c1cbd7394c2418c4eace7bfc75ad4869, type: 3}
+    ColorOverrides: []
+    TextureOverrides: []
+  - Name: Tentacules lames
+    Slot: 2
+    Color: {r: 0.42352942, g: 0.42352942, b: 0.42352942, a: 1}
+    Sprite: {fileID: 21300000, guid: 1cec62fcdbaf21743b4b6b42315b2de8, type: 3}
+    ColorOverrides: []
+    TextureOverrides: []
+  Reactions:
+  - {fileID: 11400000, guid: d4a6a17be235feb4eb088d74d7ede35c, type: 2}
