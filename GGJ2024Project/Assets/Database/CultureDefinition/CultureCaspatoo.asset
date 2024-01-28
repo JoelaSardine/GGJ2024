@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4b197f5ea70ab242b700d098058baa5, type: 3}
+  m_Name: CultureCaspatoo
+  m_EditorClassIdentifier: 
+  Name: Syntopet
+  TraitType: 2
+  UsualMood: 0
+  Features:
+  - Name: Nez rouge
+    Slot: 10
+    Color: {r: 1, g: 0, b: 0.028162003, a: 0}
+    Sprite: {fileID: 21300000, guid: ddbe992abda9c3d4180714f5bf1ce58f, type: 3}
+    ColorOverrides: []
+    TextureOverrides: []
+  Reactions:
+  - {fileID: 11400000, guid: 2803d65e2e4bf1f4799a9456d1b4e6fb, type: 2}
+  - {fileID: 11400000, guid: d4a6a17be235feb4eb088d74d7ede35c, type: 2}
+  - {fileID: 11400000, guid: 626cfa7b09625374bb30d6cf12c17959, type: 2}
