@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d4b197f5ea70ab242b700d098058baa5, type: 3}
-  m_Name: CultureMoisie
+  m_Name: CultureMoisi
   m_EditorClassIdentifier: 
-  Name: 
-  TraitType: 0
+  Name: Moisi
+  TraitType: 2
   UsualMood: 0
   Features:
   - Name: Chapeau festif
@@ -24,5 +24,4 @@ MonoBehaviour:
     TextureOverrides: []
   Reactions:
   - {fileID: 11400000, guid: 2ee1eccb85ed2c541922b79a7e0a2a31, type: 2}
-  - {fileID: 11400000, guid: 16819a36ca792024795b426c82219102, type: 2}
-  - {fileID: 11400000, guid: 912bc7832030daf45889e9553e393b05, type: 2}
+  - {fileID: 11400000, guid: aee4acc0ce1a5404bb37f92689aa8bdb, type: 2}
