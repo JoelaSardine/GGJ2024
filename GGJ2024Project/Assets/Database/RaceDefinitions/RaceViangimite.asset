@@ -16,7 +16,7 @@ MonoBehaviour:
   TraitType: 1
   UsualMood: 0
   Features:
-  - Name: Squared head
+  - Name: Round head
     Slot: 4
     Color: {r: 1, g: 1, b: 1, a: 1}
     Sprite: {fileID: 21300000, guid: 80e767ca8c96af143bcaab4cf9d0c5cf, type: 3}
@@ -25,15 +25,9 @@ MonoBehaviour:
   - Name: Nose
     Slot: 10
     Color: {r: 1, g: 1, b: 1, a: 1}
-    Sprite: {fileID: 1869223693, guid: 9662ef20e7ea76d4f8a38f3d9a1aecaf, type: 3}
+    Sprite: {fileID: 21300000, guid: 95f4a4e711b413d4daf65742b985503c, type: 3}
     ColorOverrides: []
-    TextureOverrides:
-    - Mood: 1
-      Value: {fileID: -363493253, guid: 9662ef20e7ea76d4f8a38f3d9a1aecaf, type: 3}
-    - Mood: 2
-      Value: {fileID: 1733793749, guid: 9662ef20e7ea76d4f8a38f3d9a1aecaf, type: 3}
-    - Mood: 3
-      Value: {fileID: -2135148278, guid: 9662ef20e7ea76d4f8a38f3d9a1aecaf, type: 3}
+    TextureOverrides: []
   - Name: Two red Eyes
     Slot: 9
     Color: {r: 0.8862745, g: 0, b: 0.21596822, a: 1}
@@ -52,6 +46,18 @@ MonoBehaviour:
     Slot: 8
     Color: {r: 1, g: 1, b: 1, a: 1}
     Sprite: {fileID: 21300000, guid: 6d14df7dbb4d1b44ab96de8184a355a7, type: 3}
+    ColorOverrides: []
+    TextureOverrides: []
+  - Name: Body
+    Slot: 1
+    Color: {r: 1, g: 1, b: 1, a: 1}
+    Sprite: {fileID: 21300000, guid: e4137cc1c3c77224abcdecd26b38eeba, type: 3}
+    ColorOverrides: []
+    TextureOverrides: []
+  - Name: Arms
+    Slot: 2
+    Color: {r: 1, g: 1, b: 1, a: 1}
+    Sprite: {fileID: 21300000, guid: 1cec62fcdbaf21743b4b6b42315b2de8, type: 3}
     ColorOverrides: []
     TextureOverrides: []
   Reactions: []

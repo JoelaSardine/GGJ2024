@@ -16,13 +16,13 @@ MonoBehaviour:
   TraitType: 1
   UsualMood: 0
   Features:
-  - Name: Squared head
+  - Name: head
     Slot: 4
     Color: {r: 1, g: 1, b: 1, a: 1}
-    Sprite: {fileID: 21300000, guid: e11d609eb3b16fc458d2f35608a4028b, type: 3}
+    Sprite: {fileID: 21300000, guid: 540df58d42224664fa8e716d4b59808e, type: 3}
     ColorOverrides: []
     TextureOverrides: []
-  - Name: Nose ong
+  - Name: Nose long
     Slot: 10
     Color: {r: 1, g: 1, b: 1, a: 1}
     Sprite: {fileID: 21300000, guid: a122af5db48bdde41bcab10cc72a9f68, type: 3}
@@ -51,13 +51,19 @@ MonoBehaviour:
   - Name: Long thin arm
     Slot: 2
     Color: {r: 1, g: 1, b: 1, a: 1}
-    Sprite: {fileID: 21300000, guid: 01333b03da29aba4fb1f03f55f9dc92d, type: 3}
+    Sprite: {fileID: 21300000, guid: aeee16430c7347d49a97d004447a3089, type: 3}
     ColorOverrides: []
     TextureOverrides: []
   - Name: Horn Pointy
     Slot: 3
     Color: {r: 1, g: 1, b: 1, a: 1}
     Sprite: {fileID: 21300000, guid: 78d85e30354073e45925081277078500, type: 3}
+    ColorOverrides: []
+    TextureOverrides: []
+  - Name: Body
+    Slot: 1
+    Color: {r: 1, g: 1, b: 1, a: 1}
+    Sprite: {fileID: 21300000, guid: a532319dafc41ae43a70cdeb8eb80e38, type: 3}
     ColorOverrides: []
     TextureOverrides: []
   Reactions: []
