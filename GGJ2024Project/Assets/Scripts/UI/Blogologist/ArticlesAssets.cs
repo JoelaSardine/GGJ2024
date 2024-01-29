@@ -20,6 +20,8 @@ public class ArticleContent
     public string trivia;
     [TextArea]
     public string tags;
+    [TextArea]
+    public string features;
 }
 
 [CreateAssetMenu(fileName = "ArticlesAsset", menuName = "ScriptableObjects/ArticlesAsset", order = 1)]
@@ -144,7 +146,7 @@ public class ArticlesAssets : ScriptableObject
             foreach (string t in tags)
             {
                 if (a.title.ToLowerInvariant().Contains(t) || a.description.ToLowerInvariant().Contains(t) || a.culture.ToLowerInvariant().Contains(t)
-                    || a.trivia.ToLowerInvariant().Contains(t) || a.tags.ToLowerInvariant().Contains(t))
+                    || a.trivia.ToLowerInvariant().Contains(t) || a.tags.ToLowerInvariant().Contains(t) || a.features.ToLowerInvariant().Contains(t))
                 {
                     occurences++;
                 }
@@ -160,7 +162,7 @@ public class ArticlesAssets : ScriptableObject
             foreach (string t in tags)
             {
                 if (a.title.ToLowerInvariant().Contains(t) || a.description.ToLowerInvariant().Contains(t) || a.culture.ToLowerInvariant().Contains(t)
-                    || a.trivia.ToLowerInvariant().Contains(t) || a.tags.ToLowerInvariant().Contains(t))
+                    || a.trivia.ToLowerInvariant().Contains(t) || a.tags.ToLowerInvariant().Contains(t) || a.features.ToLowerInvariant().Contains(t))
                 {
                     occurences++;
                 }
@@ -195,7 +197,8 @@ public class ArticlesAssets : ScriptableObject
         foreach (XmlNode node in root.ChildNodes)
         {
             ArticleContent newArticle = new ArticleContent();
-            newArticle.title = node.Attributes["Title"].Value; ;
+            newArticle.title = node.Attributes["Title"].Value;
+            newArticle.features = node.Attributes["Features"].Value;
             newArticle.author = node.Attributes["Author"].Value;
             newArticle.searchDescription = node.Attributes["Summary"].Value;
             newArticle.description = node.Attributes["Description"].Value;
@@ -231,6 +234,7 @@ public class ArticlesAssets : ScriptableObject
             newArticle.culture = node.Attributes["Culture"].Value;
             newArticle.trivia = node.Attributes["Trivia"].Value;
             newArticle.tags = node.Attributes["Tags"].Value;
+            newArticle.features = node.Attributes["Features"].Value;
 
             cultureArticles.Add(newArticle);
         }
