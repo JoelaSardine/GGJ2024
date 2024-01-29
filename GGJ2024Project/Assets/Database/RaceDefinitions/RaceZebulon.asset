@@ -18,13 +18,13 @@ MonoBehaviour:
   Features:
   - Name: Squared head
     Slot: 4
-    Color: {r: 1, g: 1, b: 1, a: 1}
+    Color: {r: 0.64705884, g: 1, b: 0.8627451, a: 1}
     Sprite: {fileID: 21300000, guid: e11d609eb3b16fc458d2f35608a4028b, type: 3}
     ColorOverrides: []
     TextureOverrides: []
   - Name: Nose
     Slot: 10
-    Color: {r: 1, g: 1, b: 1, a: 1}
+    Color: {r: 0.64705884, g: 1, b: 0.8628078, a: 1}
     Sprite: {fileID: 21300000, guid: 95f4a4e711b413d4daf65742b985503c, type: 3}
     ColorOverrides: []
     TextureOverrides:
@@ -36,13 +36,13 @@ MonoBehaviour:
       Value: {fileID: -2135148278, guid: 9662ef20e7ea76d4f8a38f3d9a1aecaf, type: 3}
   - Name: Mouth
     Slot: 8
-    Color: {r: 1, g: 1, b: 1, a: 1}
+    Color: {r: 0.64705884, g: 1, b: 0.8627451, a: 1}
     Sprite: {fileID: 21300000, guid: 69a208cef1c77184eb06894f84704efb, type: 3}
     ColorOverrides: []
     TextureOverrides: []
   - Name: Arms
     Slot: 2
-    Color: {r: 1, g: 1, b: 1, a: 1}
+    Color: {r: 0.64705884, g: 1, b: 0.8627451, a: 1}
     Sprite: {fileID: 21300000, guid: 1cec62fcdbaf21743b4b6b42315b2de8, type: 3}
     ColorOverrides: []
     TextureOverrides: []
@@ -62,13 +62,13 @@ MonoBehaviour:
       Value: {fileID: 21300000, guid: 9efba43c03c31de4295c9d82985791b4, type: 3}
   - Name: Body
     Slot: 1
-    Color: {r: 1, g: 1, b: 1, a: 1}
+    Color: {r: 0.64705884, g: 1, b: 0.8627451, a: 1}
     Sprite: {fileID: 21300000, guid: e4137cc1c3c77224abcdecd26b38eeba, type: 3}
     ColorOverrides: []
     TextureOverrides: []
   - Name: Arms
     Slot: 2
-    Color: {r: 1, g: 1, b: 1, a: 1}
+    Color: {r: 0.28368637, g: 0.7075472, b: 0.6190395, a: 1}
     Sprite: {fileID: 21300000, guid: 1cec62fcdbaf21743b4b6b42315b2de8, type: 3}
     ColorOverrides: []
     TextureOverrides: []

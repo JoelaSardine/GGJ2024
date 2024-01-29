@@ -63,15 +63,16 @@ MonoBehaviour:
       sur la plan\xE8te Neptunia."
     description: "Le Viangimite, \xE9galement connu sous le nom de Viandarien, est
       un cousin du Zebulon. Il dispose les m\xEAme caract\xE9ristiques physiques
-      que ces derniers \xE0 l'exception d'une grand bouches muni de dents ac\xE9r\xE9s
-      qui lui permettent de manger plusieurs plats en m\xEAme temps. Cependant, il
-      a \xE9t\xE9 prouv\xE9 suite \xE0 des recherches approfondies que ces derniers
-      n'avait qu'un seul tube digestif et estomac, ce qui faisait que selon eux,
-      tous les plats avaient la m\xEAme saveur. C'est pour cela que leurs meilleurs
-      scientifiques et ing\xE9nieurs travaill\xE8rent main dans la main dans le but
-      de d\xE9velopper une sauce permettant de sublimer ce gloubiboulga de saveurs.
-      D\xE9sormais cette sauce est la seule de la galaxie \xE0 \xEAtre reconnu comme
-      un produit gastronomique et arme de destruction massive."
+      que ces derniers \xE0 l'exception de leur t\xEAte ronde et d'une grand bouches
+      muni de dents ac\xE9r\xE9s qui lui permettent de manger plusieurs plats en
+      m\xEAme temps. Cependant, il a \xE9t\xE9 prouv\xE9 suite \xE0 des recherches
+      approfondies que ces derniers n'avait qu'un seul tube digestif et estomac,
+      ce qui faisait que selon eux, tous les plats avaient la m\xEAme saveur. C'est
+      pour cela que leurs meilleurs scientifiques et ing\xE9nieurs travaill\xE8rent
+      main dans la main dans le but de d\xE9velopper une sauce permettant de sublimer
+      ce gloubiboulga de saveurs. D\xE9sormais cette sauce est la seule de la galaxie
+      \xE0 \xEAtre reconnu comme un produit gastronomique et arme de destruction
+      massive."
     culture: "Tout comme les zebulon, la culture de la competition est tr\xE9s forte
       chez leurs Viangimite.\nMais il n'ont pas le m\xEAme humour, en effet pour
       ce moqu\xE9 des competiteur Zebulon, ils aiment taper sur un burger, afin de
@@ -140,6 +141,25 @@ MonoBehaviour:
       leur offir le troph\xE9e"
     trivia: 
     tags: 
+  - title: Volcanien
+    author: Baroudeur extraverti #93
+    searchDescription: "Vient d'une plan\xE8te gel\xE9e sans aucune activit\xE9 volcanique,
+      mais tout est rouge sur la plan\xE8te. D\xE9teste la chaleur."
+    description: "Les Volcaniens sont une race aquatique qui poss\xE8de 3 yeux, originaires
+      d'une plan\xE8te froide et enti\xE8rement recouverte de Rubidium liquide. Cette
+      plan\xE8te fut baptis\xE9e Volcania \xE0 cause d'une erreur interpr\xE9tation
+      sur sa composition, car presque tout y est rouge.\n\nN'ayant pas de bras, les
+      Volcaniens utilisent un harnais robotis\xE9 muni de tentacules pour saisir
+      des objets."
+    culture: "Cette race expose souvent 3 cultures:\n- Les Moisis\n    - Pour les
+      faire rire il faut lancer de la musique, interagir avec un arrosoir puis avec
+      un cadeau, et enfin leur offrir le cadeau\n- Les Competitor\n    - Pour les
+      faire rire il faut interagir avec le troph\xE9e, puis leur donner l'arrosoir
+      et le troph\xE9e\n- Les adorateurs de Bo-Vay\n    - Pour les faire rire il
+      faut leur donner un caf\xE9, puis interagir avec l'arrosoir, puis leur donner
+      un burger."
+    trivia: 
+    tags: 
   cultureArticles:
   - title: Les competiteurs
     author: 
@@ -147,7 +167,7 @@ MonoBehaviour:
       que perdre"'
     description: Comme leur nom l'inidique, ils aiment la competition et surtout
       gagner !
-    culture: ' '
+    culture: 
     trivia: "Les r\xE9compenses et prix sont tr\xE9s important dans leurs vision
       de la competition"
     tags: 
@@ -197,7 +217,7 @@ MonoBehaviour:
     tags: 
   - title: Caspatoo
     author: 
-    searchDescription: 
+    searchDescription: "Les Caspatoo sont un peuple pacifique qui d\xE9teste la violence"
     description: "Les Caspatoo sont un peuple pacifique qui d\xE9teste la violence
       et les objets permettant la violence, ce sont par ailleur des artisans hors
       pair car ils adorent r\xE9parer tous les objets d\xE9truis par les autres aliens.
