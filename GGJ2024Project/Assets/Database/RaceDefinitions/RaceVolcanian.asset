@@ -46,9 +46,9 @@ MonoBehaviour:
     Sprite: {fileID: 21300000, guid: 128074356e7f9734bbe7381059c9aaa9, type: 3}
     ColorOverrides: []
     TextureOverrides: []
-  - Name: 3 Yeux roses
+  - Name: 3 Yeux jaunes
     Slot: 9
-    Color: {r: 1, g: 0.59607846, b: 0.5882353, a: 1}
+    Color: {r: 0.7529412, g: 0.7411765, b: 0.10980392, a: 1}
     Sprite: {fileID: 21300000, guid: 87e86b64614bee1428b3b87509140365, type: 3}
     ColorOverrides: []
     TextureOverrides:
