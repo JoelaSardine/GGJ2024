@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4656ecaccfa4c0d4d95ef87c17ca77b4, type: 3}
   m_Name: VolcanianBoVay
   m_EditorClassIdentifier: 
-  Name: Volcanian Competitor
+  Name: Volcanian Bo-Vay
   Race: {fileID: 11400000, guid: 8d9ec046c99531642b339b52c2a2bbaa, type: 2}
   Culture: {fileID: 11400000, guid: 34dd1de208f9a0344920534a3b9b225f, type: 2}
-  LaughingSequence: {fileID: 11400000, guid: 6b9e80125f5303c4ca229ede5649ff59, type: 2}
+  LaughingSequence: {fileID: 11400000, guid: 7160680efb7b0d84ea3369b3fe0b45ae, type: 2}
