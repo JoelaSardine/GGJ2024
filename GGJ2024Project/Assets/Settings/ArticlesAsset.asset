@@ -33,6 +33,8 @@ MonoBehaviour:
       que peu de traces."
     trivia: 
     tags: 
+    features: "(!) Pas dans le jeu (\xE9teinte)\n- Gros Nez\n- Yeux Rouges\n- Combien
+      d'yeux ?!"
   - title: Zebulon
     author: Baroudeur extraverti #93
     searchDescription: Des aliens cheums, mais bon ils le savent pas. C'est mieux
@@ -56,6 +58,8 @@ MonoBehaviour:
       consiste a taper 3 fois un arrosoir..."
     trivia: 
     tags: 
+    features: "Moche ! Ressemble au Viangimite\nCaract\xE9ristiques:\n- T\xEAte carr\xE9\n-
+      Gros Nez (comme Origien)\n- Yeux rouge (comme Origien)"
   - title: Viangimite
     author: Stagiaire #2810
     searchDescription: "Il adore manger de la viande avec une sauce typiquement de
@@ -63,15 +67,16 @@ MonoBehaviour:
       sur la plan\xE8te Neptunia."
     description: "Le Viangimite, \xE9galement connu sous le nom de Viandarien, est
       un cousin du Zebulon. Il dispose les m\xEAme caract\xE9ristiques physiques
-      que ces derniers \xE0 l'exception d'une grand bouches muni de dents ac\xE9r\xE9s
-      qui lui permettent de manger plusieurs plats en m\xEAme temps. Cependant, il
-      a \xE9t\xE9 prouv\xE9 suite \xE0 des recherches approfondies que ces derniers
-      n'avait qu'un seul tube digestif et estomac, ce qui faisait que selon eux,
-      tous les plats avaient la m\xEAme saveur. C'est pour cela que leurs meilleurs
-      scientifiques et ing\xE9nieurs travaill\xE8rent main dans la main dans le but
-      de d\xE9velopper une sauce permettant de sublimer ce gloubiboulga de saveurs.
-      D\xE9sormais cette sauce est la seule de la galaxie \xE0 \xEAtre reconnu comme
-      un produit gastronomique et arme de destruction massive."
+      que ces derniers \xE0 l'exception de leur t\xEAte ronde et d'une grand bouches
+      muni de dents ac\xE9r\xE9s qui lui permettent de manger plusieurs plats en
+      m\xEAme temps. Cependant, il a \xE9t\xE9 prouv\xE9 suite \xE0 des recherches
+      approfondies que ces derniers n'avait qu'un seul tube digestif et estomac,
+      ce qui faisait que selon eux, tous les plats avaient la m\xEAme saveur. C'est
+      pour cela que leurs meilleurs scientifiques et ing\xE9nieurs travaill\xE8rent
+      main dans la main dans le but de d\xE9velopper une sauce permettant de sublimer
+      ce gloubiboulga de saveurs. D\xE9sormais cette sauce est la seule de la galaxie
+      \xE0 \xEAtre reconnu comme un produit gastronomique et arme de destruction
+      massive."
     culture: "Tout comme les zebulon, la culture de la competition est tr\xE9s forte
       chez leurs Viangimite.\nMais il n'ont pas le m\xEAme humour, en effet pour
       ce moqu\xE9 des competiteur Zebulon, ils aiment taper sur un burger, afin de
@@ -82,6 +87,8 @@ MonoBehaviour:
       musique"
     trivia: 
     tags: Pistolet Laser
+    features: "Ressemble au Zebulon \nCaract\xE9ristiques:\n- une grandes bouches\n-
+      un gros nez (comme Origien)\n- Yeux rouges (comme Origien)"
   - title: Crabox
     author: Stagiaire #2810
     searchDescription: "Connu pour avoir de multiples pattes et marcher de travers,
@@ -101,6 +108,8 @@ MonoBehaviour:
       un cadeau et qu'on leur fait \xE9couter de la musique."
     trivia: 
     tags: "Ventouse \xE0 chiottes"
+    features: "Caract\xE9ristiques:\n- Corps rond jaune arrondi\n- Extr\xE9mit\xE9
+      des membres se terminant avec des pinces\n- Corne stri\xE9e"
   - title: Flagellos claquos
     author: Alternant sans imagination #153
     searchDescription: "Je ne sais pas comment \xE7a s'appelle en vrai, mais ici
@@ -121,6 +130,8 @@ MonoBehaviour:
       cadeau et flexer 3 fois avec une alterre"
     trivia: 
     tags: Spatule
+    features: "Caract\xE9ristiques:\n- Membres tr\xE8s allong\xE9 et fin\n- Nez long\n-
+      Poss\xE8des 4 cornes pointues\n- Un regard plein de vide"
   - title: Brutus sardinus
     author: "Rapporteur de bugs d\xE9sabus\xE9 #2"
     searchDescription: "Attention son nom est trompeur, il ne d\xE9crit pas du tout
@@ -140,6 +151,28 @@ MonoBehaviour:
       leur offir le troph\xE9e"
     trivia: 
     tags: 
+    features: "Caract\xE9ristiques:\n- 4 Cornes\n- 6 Yeux\n- Cape ocre\n- Aime manger"
+  - title: Volcanien
+    author: Baroudeur extraverti #93
+    searchDescription: "Vient d'une plan\xE8te gel\xE9e sans aucune activit\xE9 volcanique,
+      mais tout est rouge sur la plan\xE8te. D\xE9teste la chaleur."
+    description: "Les Volcaniens sont une race aquatique qui poss\xE8de 3 yeux, originaires
+      d'une plan\xE8te froide et enti\xE8rement recouverte de Rubidium liquide. Cette
+      plan\xE8te fut baptis\xE9e Volcania \xE0 cause d'une erreur interpr\xE9tation
+      sur sa composition, car presque tout y est rouge.\n\nN'ayant pas de bras, les
+      Volcaniens utilisent un harnais robotis\xE9 muni de tentacules pour saisir
+      des objets."
+    culture: "Cette race expose souvent 3 cultures:\n- Les Moisis\n    - Pour les
+      faire rire il faut lancer de la musique, interagir avec un arrosoir puis avec
+      un cadeau, et enfin leur offrir le cadeau\n- Les Competitor\n    - Pour les
+      faire rire il faut interagir avec le troph\xE9e, puis leur donner l'arrosoir
+      et le troph\xE9e\n- Les adorateurs de Bo-Vay\n    - Pour les faire rire il
+      faut leur donner un caf\xE9, puis interagir avec l'arrosoir, puis leur donner
+      un burger."
+    trivia: ' '
+    tags: 
+    features: "Caract\xE9ristiques: \n- Peau rouge\n- Trois yeux jaunes\n- Harnais
+      robotis\xE9 (collier poussin gris + 4 tentacules)"
   cultureArticles:
   - title: Les competiteurs
     author: 
@@ -147,10 +180,20 @@ MonoBehaviour:
       que perdre"'
     description: Comme leur nom l'inidique, ils aiment la competition et surtout
       gagner !
-    culture: ' '
+    culture: 
     trivia: "Les r\xE9compenses et prix sont tr\xE9s important dans leurs vision
       de la competition"
     tags: 
+    features: '"reagis positivement a :
+
+      - Trophy - Comptoir
+
+      - Gift
+      - Interact
+
+      N''aime pas :
+
+      -'
   - title: Les adorateurs de Bo-Vay
     author: 
     searchDescription: "Culture n\xE9e dans l'un des derniers bastions d'une lointaine
@@ -162,6 +205,8 @@ MonoBehaviour:
     culture: 
     trivia: 
     tags: 
+    features: "Reagis positivement a :\n- Burger + Clock : Comptoir\nReagis n\xE9gativement
+      a :"
   - title: Claquilipa
     author: 
     searchDescription: Une culture festive qui adore montrer leur bonne humeur
@@ -173,6 +218,16 @@ MonoBehaviour:
     trivia: "Notes : Il faut mettre a jour la description, il s'avere que les claquilpa
       deteste le caf\xE9 et les burger si ils sont present\xE9 ensemble."
     tags: 
+    features: 'reagis positivement a :
+
+      - Gift - Comptoir
+
+      - Any food
+      - Comptoir
+
+      N''aime pas :
+
+      -  Burger + Coffee - Comptoir.'
   - title: Gomusco
     author: Jokologist8
     searchDescription: "Cette culture est bas\xE9 sur la force, ils apprecie tout
@@ -184,6 +239,21 @@ MonoBehaviour:
     trivia: La culture de plante est mal vu par leurs membre, puisque leurs commerce
       repose sur le commerce de viande.
     tags: 
+    features: 'reagis positivement a :
+
+      - Burger - Comptoir
+
+      - Hammer
+      - Interact
+
+      - Dumbell - Interact
+
+      N''aime pas :
+
+      - Watering
+      can - Interact
+
+      - Gift - Comptoir'
   - title: Syntopet
     author: Jokologist8
     searchDescription: "Si vous rencontrez un jour un syntopet, parlez lui fort,
@@ -195,9 +265,11 @@ MonoBehaviour:
     culture: 
     trivia: 
     tags: 
+    features: "Reagis positivement a :\n- Alarm - Interact\n- Headphone - Comptoir\nA
+      peur de \n- Watering can - Interact / Comptoir"
   - title: Caspatoo
     author: 
-    searchDescription: 
+    searchDescription: "Les Caspatoo sont un peuple pacifique qui d\xE9teste la violence"
     description: "Les Caspatoo sont un peuple pacifique qui d\xE9teste la violence
       et les objets permettant la violence, ce sont par ailleur des artisans hors
       pair car ils adorent r\xE9parer tous les objets d\xE9truis par les autres aliens.
@@ -207,6 +279,16 @@ MonoBehaviour:
     culture: 
     trivia: 
     tags: 
+    features: 'Reagis positivement a :
+
+      - Nouriture et boisson
+
+      Reagis
+      negativement a :
+
+      -Marteau
+
+      -Interagir avec le marteau'
   - title: Moisis
     author: Sardinus
     searchDescription: "Une culture qui consiste \xE0 f\xEAter son anniversaire chaque
@@ -223,6 +305,8 @@ MonoBehaviour:
     culture: 
     trivia: 
     tags: 
+    features: "- Porte un chapeau festif\n- Reagit positiviement \xE0 Cadeau et Musique\n-
+      Ne r\xE9agit jamais \xE0 la nourriture ?"
   - title: Stelehair
     author: Sardinus
     searchDescription: "Une culture qui rejette le port de tout v\xEAtement - \xE0
@@ -237,3 +321,6 @@ MonoBehaviour:
     culture: 
     trivia: 
     tags: 
+    features: "- Porte pour tout v\xEAtement une amulette \xE9toil\xE9e\n- Aime les
+      halteres et respecte les gens qui font de la muscu \n- N'aime pas les Gift
+      ou les Marteaux"
