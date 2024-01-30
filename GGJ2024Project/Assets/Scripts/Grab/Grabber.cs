@@ -140,7 +140,7 @@ public class Grabber : MonoBehaviour
         if (_hoveringGrabable)
         {
 	        _hoveringGrabable.Hoovered = true;
-	        this.GrabText.text = $"Grab {_hoveringGrabable.name}";
+	        this.GrabText.text = $"[E] : Grab {_hoveringGrabable.name}";
         }
         else
         {

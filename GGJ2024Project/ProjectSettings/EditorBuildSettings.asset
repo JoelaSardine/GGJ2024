@@ -14,10 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Humorist.unity
     guid: 1f7f4c0d85d76be4593d78b3ef9b70f2
-  - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
-  - enabled: 0
-    path: Assets/Scenes/Test/Playground.unity
-    guid: 707acc8dffb72b144bb1ffbe1c965f3d
+  - enabled: 1
+    path: Assets/Scenes/HumoristSolo.unity
+    guid: a1063da9e4da99d4cb8db0574cf3bc83
   m_configObjects: {}
