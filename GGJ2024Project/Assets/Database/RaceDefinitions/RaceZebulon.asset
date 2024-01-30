@@ -27,13 +27,7 @@ MonoBehaviour:
     Color: {r: 0.64705884, g: 1, b: 0.8628078, a: 1}
     Sprite: {fileID: 21300000, guid: 95f4a4e711b413d4daf65742b985503c, type: 3}
     ColorOverrides: []
-    TextureOverrides:
-    - Mood: 1
-      Value: {fileID: -363493253, guid: 9662ef20e7ea76d4f8a38f3d9a1aecaf, type: 3}
-    - Mood: 2
-      Value: {fileID: 1733793749, guid: 9662ef20e7ea76d4f8a38f3d9a1aecaf, type: 3}
-    - Mood: 3
-      Value: {fileID: -2135148278, guid: 9662ef20e7ea76d4f8a38f3d9a1aecaf, type: 3}
+    TextureOverrides: []
   - Name: Mouth
     Slot: 8
     Color: {r: 0.64705884, g: 1, b: 0.8627451, a: 1}

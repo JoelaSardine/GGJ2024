@@ -27,13 +27,7 @@ MonoBehaviour:
     Color: {r: 0.15686275, g: 0.50980395, b: 1, a: 1}
     Sprite: {fileID: 21300000, guid: a122af5db48bdde41bcab10cc72a9f68, type: 3}
     ColorOverrides: []
-    TextureOverrides:
-    - Mood: 1
-      Value: {fileID: -363493253, guid: 9662ef20e7ea76d4f8a38f3d9a1aecaf, type: 3}
-    - Mood: 2
-      Value: {fileID: 1733793749, guid: 9662ef20e7ea76d4f8a38f3d9a1aecaf, type: 3}
-    - Mood: 3
-      Value: {fileID: -2135148278, guid: 9662ef20e7ea76d4f8a38f3d9a1aecaf, type: 3}
+    TextureOverrides: []
   - Name: Two red Eyes
     Slot: 9
     Color: {r: 1, g: 0.92441505, b: 0.36470592, a: 1}

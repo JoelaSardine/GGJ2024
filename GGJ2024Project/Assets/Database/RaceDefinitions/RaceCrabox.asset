@@ -27,13 +27,7 @@ MonoBehaviour:
     Color: {r: 0.6415094, g: 0.49568897, b: 0.40245637, a: 1}
     Sprite: {fileID: 21300000, guid: f79c35ab5a06dc441afdd1b391775b79, type: 3}
     ColorOverrides: []
-    TextureOverrides:
-    - Mood: 1
-      Value: {fileID: -363493253, guid: 9662ef20e7ea76d4f8a38f3d9a1aecaf, type: 3}
-    - Mood: 2
-      Value: {fileID: 1733793749, guid: 9662ef20e7ea76d4f8a38f3d9a1aecaf, type: 3}
-    - Mood: 3
-      Value: {fileID: -2135148278, guid: 9662ef20e7ea76d4f8a38f3d9a1aecaf, type: 3}
+    TextureOverrides: []
   - Name: Eyes
     Slot: 9
     Color: {r: 0.990566, g: 0.79634976, b: 0.4719206, a: 1}
