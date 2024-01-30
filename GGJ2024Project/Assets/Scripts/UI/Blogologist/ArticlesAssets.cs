@@ -156,6 +156,8 @@ public class ArticlesAssets : ScriptableObject
             result.Add(a, occurences);
         }
 
+        
+
         foreach (ArticleContent a in cultureArticles)
         {
             int occurences = 0;

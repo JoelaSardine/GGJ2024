@@ -18,13 +18,13 @@ MonoBehaviour:
   Features:
   - Name: Squared head
     Slot: 4
-    Color: {r: 1, g: 1, b: 1, a: 1}
+    Color: {r: 1, g: 0.5801887, b: 0.5801887, a: 1}
     Sprite: {fileID: 21300000, guid: 24d2b7148e75b19429b1676788f70cf4, type: 3}
     ColorOverrides: []
     TextureOverrides: []
   - Name: Horn strip
     Slot: 3
-    Color: {r: 1, g: 1, b: 1, a: 1}
+    Color: {r: 0.6415094, g: 0.49568897, b: 0.40245637, a: 1}
     Sprite: {fileID: 21300000, guid: f79c35ab5a06dc441afdd1b391775b79, type: 3}
     ColorOverrides: []
     TextureOverrides:
@@ -36,7 +36,7 @@ MonoBehaviour:
       Value: {fileID: -2135148278, guid: 9662ef20e7ea76d4f8a38f3d9a1aecaf, type: 3}
   - Name: Eyes
     Slot: 9
-    Color: {r: 1, g: 1, b: 1, a: 1}
+    Color: {r: 0.990566, g: 0.79634976, b: 0.4719206, a: 1}
     Sprite: {fileID: 21300000, guid: eacc24fc3019cb3419351c5b2fb4a4e3, type: 3}
     ColorOverrides: []
     TextureOverrides:
@@ -50,13 +50,13 @@ MonoBehaviour:
       Value: {fileID: 21300000, guid: 9efba43c03c31de4295c9d82985791b4, type: 3}
   - Name: Pincer
     Slot: 2
-    Color: {r: 1, g: 1, b: 1, a: 1}
+    Color: {r: 1, g: 0.5803922, b: 0.5803922, a: 1}
     Sprite: {fileID: 21300000, guid: d3fac801c6500204984576a121dcffd3, type: 3}
     ColorOverrides: []
     TextureOverrides: []
   - Name: Pear shape body
     Slot: 1
-    Color: {r: 1, g: 0.96391666, b: 0.5801887, a: 1}
+    Color: {r: 1, g: 0.5803922, b: 0.5803922, a: 1}
     Sprite: {fileID: 21300000, guid: 1067ab43bc3e91542abee75cf7c401e0, type: 3}
     ColorOverrides: []
     TextureOverrides: []

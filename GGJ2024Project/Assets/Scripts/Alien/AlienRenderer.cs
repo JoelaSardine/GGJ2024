@@ -86,6 +86,7 @@ public class AlienRenderer : MonoBehaviour
 	{
 		if (this.debugDefinition != null)
 		{
+			if(SlotRenderers.Count == 0) Awake();
 			this.Render(this.debugDefinition, this.debugMood);
 			this.debugDefinition = null;
 		}
